@@ -3,10 +3,10 @@ package widget
 import (
 	"testing"
 
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
 	"github.com/stretchr/testify/assert"
+	"nfyne/canvas"
+	"nfyne/test"
+	"nfyne/theme"
 )
 
 func TestNewIcon(t *testing.T) {

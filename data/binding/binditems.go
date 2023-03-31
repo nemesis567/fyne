@@ -5,8 +5,6 @@ package binding
 
 import (
 	"bytes"
-
-	"fyne.io/fyne/v2"
 )
 
 // Bool supports binding a bool value.

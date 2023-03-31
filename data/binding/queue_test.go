@@ -6,8 +6,8 @@ import (
 	"sync"
 	"testing"
 
-	"fyne.io/fyne/v2/internal/async"
 	"github.com/stretchr/testify/assert"
+	"nfyne/internal/async"
 )
 
 func TestMain(m *testing.M) {

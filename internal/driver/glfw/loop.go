@@ -5,11 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal"
-	"fyne.io/fyne/v2/internal/app"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/painter"
+	"nfyne/internal"
+	"nfyne/internal/app"
+	"nfyne/internal/cache"
+	"nfyne/internal/painter"
 )
 
 type funcData struct {

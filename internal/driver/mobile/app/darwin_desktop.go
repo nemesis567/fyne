@@ -28,11 +28,11 @@ import (
 	"log"
 	"runtime"
 
-	"fyne.io/fyne/v2/internal/driver/mobile/event/key"
-	"fyne.io/fyne/v2/internal/driver/mobile/event/lifecycle"
-	"fyne.io/fyne/v2/internal/driver/mobile/event/paint"
-	"fyne.io/fyne/v2/internal/driver/mobile/event/size"
-	"fyne.io/fyne/v2/internal/driver/mobile/event/touch"
+	"nfyne/internal/driver/mobile/event/key"
+	"nfyne/internal/driver/mobile/event/lifecycle"
+	"nfyne/internal/driver/mobile/event/paint"
+	"nfyne/internal/driver/mobile/event/size"
+	"nfyne/internal/driver/mobile/event/touch"
 )
 
 var initThreadID uint64

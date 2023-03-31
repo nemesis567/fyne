@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
-	"fyne.io/fyne/v2/canvas"
-	col "fyne.io/fyne/v2/internal/color"
-	_ "fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
 	"github.com/stretchr/testify/assert"
+	"nfyne/canvas"
+	col "nfyne/internal/color"
+	_ "nfyne/test"
+	"nfyne/theme"
 )
 
 func TestEntryCursorAnim(t *testing.T) {

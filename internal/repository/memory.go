@@ -1,9 +1,8 @@
 package repository
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/storage/repository"
+	"nfyne/storage"
+	"nfyne/storage/repository"
 
 	"fmt"
 	"io"

@@ -7,8 +7,6 @@ import (
 	"encoding/json"
 	"io"
 	"os"
-
-	"fyne.io/fyne/v2"
 )
 
 func (s *settings) load() {

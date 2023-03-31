@@ -6,8 +6,6 @@ import (
 	"path/filepath"
 	"strings"
 	"unicode/utf8"
-
-	"fyne.io/fyne/v2"
 )
 
 // Declare conformance with fyne.URI interface.

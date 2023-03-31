@@ -2,8 +2,6 @@ package cache
 
 import (
 	"sync"
-
-	"fyne.io/fyne/v2"
 )
 
 var (

@@ -3,10 +3,9 @@ package dialog
 import (
 	"image/color"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	internalwidget "fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/canvas"
+	internalwidget "nfyne/internal/widget"
+	"nfyne/widget"
 )
 
 // colorPreview displays a 2 part rectangle showing the current and previous selected colours

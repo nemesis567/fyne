@@ -4,9 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/storage"
 	"github.com/stretchr/testify/assert"
+	"nfyne/storage"
 )
 
 func TestSprintfConversionRead(t *testing.T) {

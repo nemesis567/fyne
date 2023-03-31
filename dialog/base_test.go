@@ -6,11 +6,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/canvas"
+	"nfyne/test"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 func TestShowCustom_ApplyTheme(t *testing.T) {

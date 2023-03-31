@@ -7,8 +7,6 @@ import (
 	"errors"
 	"reflect"
 	"sync"
-
-	"fyne.io/fyne/v2"
 )
 
 var (

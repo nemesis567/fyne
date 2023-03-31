@@ -16,8 +16,7 @@ import (
 
 	"github.com/godbus/dbus/v5"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/theme"
 )
 
 var once sync.Once

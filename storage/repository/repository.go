@@ -4,8 +4,6 @@ package repository
 import (
 	"fmt"
 	"strings"
-
-	"fyne.io/fyne/v2"
 )
 
 // repositoryTable stores the mapping of schemes to Repository implementations.

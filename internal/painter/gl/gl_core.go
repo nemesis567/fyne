@@ -7,8 +7,6 @@ import (
 	"strings"
 
 	"github.com/go-gl/gl/v3.2-core/gl"
-
-	"fyne.io/fyne/v2"
 )
 
 const (

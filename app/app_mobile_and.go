@@ -19,8 +19,7 @@ import (
 	"path/filepath"
 	"unsafe"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal/driver/mobile/app"
+	"nfyne/internal/driver/mobile/app"
 )
 
 func (a *fyneApp) OpenURL(url *url.URL) error {

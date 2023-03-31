@@ -3,11 +3,10 @@ package tutorials
 import (
 	"net/url"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/cmd/fyne_demo/data"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/canvas"
+	"nfyne/cmd/fyne_demo/data"
+	"nfyne/container"
+	"nfyne/widget"
 )
 
 func parseURL(urlStr string) *url.URL {

@@ -9,8 +9,7 @@ import (
 	"runtime"
 	"strings"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/cmd/fyne/internal/util"
+	"nfyne/cmd/fyne/internal/util"
 
 	"golang.org/x/mod/semver"
 	"golang.org/x/sys/execabs"

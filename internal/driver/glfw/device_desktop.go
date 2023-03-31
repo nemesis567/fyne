@@ -5,8 +5,6 @@ package glfw
 
 import (
 	"runtime"
-
-	"fyne.io/fyne/v2"
 )
 
 func (*glDevice) IsMobile() bool {

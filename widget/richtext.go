@@ -7,12 +7,11 @@ import (
 	"sync"
 	"unicode"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/layout"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/internal/cache"
+	"nfyne/internal/widget"
+	"nfyne/layout"
+	"nfyne/theme"
 )
 
 const (

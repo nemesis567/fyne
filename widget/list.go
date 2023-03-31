@@ -4,12 +4,11 @@ import (
 	"fmt"
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/data/binding"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/data/binding"
+	"nfyne/driver/desktop"
+	"nfyne/internal/widget"
+	"nfyne/theme"
 )
 
 // ListItemID uniquely identifies an item within a list.

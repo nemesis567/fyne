@@ -3,10 +3,10 @@ package widget
 import (
 	"testing"
 
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/theme"
 	"github.com/stretchr/testify/assert"
+	"nfyne/canvas"
+	"nfyne/internal/cache"
+	"nfyne/theme"
 )
 
 type extendedIcon struct {

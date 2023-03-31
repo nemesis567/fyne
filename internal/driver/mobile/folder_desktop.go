@@ -3,10 +3,6 @@
 
 package mobile
 
-import (
-	"fyne.io/fyne/v2"
-)
-
 func canListURI(fyne.URI) bool {
 	// no-op as we use the internal FileRepository
 	return false

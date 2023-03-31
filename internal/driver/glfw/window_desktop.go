@@ -11,13 +11,12 @@ import (
 	"runtime"
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal"
-	"fyne.io/fyne/v2/internal/driver/common"
-	"fyne.io/fyne/v2/internal/painter"
-	"fyne.io/fyne/v2/internal/painter/gl"
+	"nfyne/canvas"
+	"nfyne/driver/desktop"
+	"nfyne/internal"
+	"nfyne/internal/driver/common"
+	"nfyne/internal/painter"
+	"nfyne/internal/painter/gl"
 
 	"github.com/go-gl/glfw/v3.3/glfw"
 )

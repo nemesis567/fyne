@@ -6,8 +6,6 @@ package glfw
 import (
 	"regexp"
 	"syscall/js"
-
-	"fyne.io/fyne/v2"
 )
 
 var isMobile = regexp.MustCompile("Android|BlackBerry|iPhone|iPad|iPod|Opera Mini|IEMobile")

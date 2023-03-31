@@ -9,11 +9,10 @@ import (
 	"runtime"
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal"
-	"fyne.io/fyne/v2/internal/driver/common"
-	"fyne.io/fyne/v2/internal/painter/gl"
+	"nfyne/driver/desktop"
+	"nfyne/internal"
+	"nfyne/internal/driver/common"
+	"nfyne/internal/painter/gl"
 
 	"github.com/fyne-io/glfw-js"
 )

@@ -6,14 +6,13 @@ import (
 	"log"
 	"net/url"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/app"
-	"fyne.io/fyne/v2/cmd/fyne_demo/tutorials"
-	"fyne.io/fyne/v2/cmd/fyne_settings/settings"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/app"
+	"nfyne/cmd/fyne_demo/tutorials"
+	"nfyne/cmd/fyne_settings/settings"
+	"nfyne/container"
+	"nfyne/driver/desktop"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 const preferenceCurrentTutorial = "currentTutorial"

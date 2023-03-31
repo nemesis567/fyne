@@ -3,8 +3,7 @@ package cache
 import (
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"github.com/stretchr/testify/assert"
+	"nfyne"
 )
 
 func TestTextCacheGet(t *testing.T) {

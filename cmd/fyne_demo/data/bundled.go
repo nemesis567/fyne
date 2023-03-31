@@ -3,7 +3,7 @@
 
 package data
 
-import "fyne.io/fyne/v2"
+import "nfyne"
 
 var resourceLogoPng = &fyne.StaticResource{
 	StaticName: "logo.png",

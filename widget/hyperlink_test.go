@@ -4,10 +4,9 @@ import (
 	"net/url"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/driver/desktop"
+	"nfyne/test"
+	"nfyne/theme"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

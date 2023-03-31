@@ -1,9 +1,5 @@
 package desktop
 
-import (
-	"fyne.io/fyne/v2"
-)
-
 const (
 	// KeyNone represents no key
 	KeyNone fyne.KeyName = ""

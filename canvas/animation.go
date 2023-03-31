@@ -3,8 +3,6 @@ package canvas
 import (
 	"image/color"
 	"time"
-
-	"fyne.io/fyne/v2"
 )
 
 const (

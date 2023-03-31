@@ -7,14 +7,13 @@ import (
 	"io/ioutil"
 	"log"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/data/validation"
-	"fyne.io/fyne/v2/dialog"
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/canvas"
+	"nfyne/container"
+	"nfyne/data/validation"
+	"nfyne/dialog"
+	"nfyne/storage"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 func confirmCallback(response bool) {

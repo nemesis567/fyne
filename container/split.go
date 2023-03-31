@@ -1,11 +1,10 @@
 package container
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/canvas"
+	"nfyne/driver/desktop"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 // Declare conformity with CanvasObject interface

@@ -7,8 +7,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/storage"
+	"nfyne/storage"
 )
 
 type file struct {

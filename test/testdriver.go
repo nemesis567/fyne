@@ -4,12 +4,11 @@ import (
 	"image"
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal/driver"
-	"fyne.io/fyne/v2/internal/painter"
-	"fyne.io/fyne/v2/internal/painter/software"
-	intRepo "fyne.io/fyne/v2/internal/repository"
-	"fyne.io/fyne/v2/storage/repository"
+	"nfyne/internal/driver"
+	"nfyne/internal/painter"
+	"nfyne/internal/painter/software"
+	intRepo "nfyne/internal/repository"
+	"nfyne/storage/repository"
 )
 
 // SoftwarePainter describes a simple type that can render canvases

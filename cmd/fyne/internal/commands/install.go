@@ -8,8 +8,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/cmd/fyne/internal/mobile"
+	"nfyne/cmd/fyne/internal/mobile"
 
 	"github.com/urfave/cli/v2"
 	"golang.org/x/sys/execabs"

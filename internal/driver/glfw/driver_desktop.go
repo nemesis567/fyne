@@ -9,12 +9,11 @@ import (
 	"runtime"
 	"sync"
 
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/painter"
 	"fyne.io/systray"
+	"nfyne/canvas"
+	"nfyne/internal/painter"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/theme"
 )
 
 var (

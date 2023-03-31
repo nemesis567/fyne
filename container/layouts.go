@@ -1,9 +1,8 @@
-package container // import "fyne.io/fyne/v2/container"
+package container // import "nfyne/container"
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal"
-	"fyne.io/fyne/v2/layout"
+	"nfyne/internal"
+	"nfyne/layout"
 )
 
 // NewAdaptiveGrid creates a new container with the specified objects and using the grid layout.

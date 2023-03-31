@@ -7,8 +7,6 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-
-	"fyne.io/fyne/v2"
 )
 
 func BenchmarkPosition_Add(b *testing.B) {

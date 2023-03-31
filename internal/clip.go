@@ -1,7 +1,5 @@
 package internal
 
-import "fyne.io/fyne/v2"
-
 // ClipStack keeps track of the areas that should be clipped when drawing a canvas.
 // If no clips are present then adding one will be added as-is.
 // Subsequent items pushed will be completely within the previous clip.

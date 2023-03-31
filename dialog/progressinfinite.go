@@ -3,11 +3,10 @@ package dialog
 import (
 	"image/color"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/canvas"
+	"nfyne/container"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 // ProgressInfiniteDialog is a simple dialog window that displays text and a infinite progress bar.

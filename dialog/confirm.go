@@ -1,9 +1,8 @@
 package dialog
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 // ConfirmDialog is like the standard Dialog but with an additional confirmation button

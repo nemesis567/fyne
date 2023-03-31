@@ -25,10 +25,10 @@ import (
 	"runtime"
 	"time"
 
-	"fyne.io/fyne/v2/internal/driver/mobile/event/lifecycle"
-	"fyne.io/fyne/v2/internal/driver/mobile/event/paint"
-	"fyne.io/fyne/v2/internal/driver/mobile/event/size"
-	"fyne.io/fyne/v2/internal/driver/mobile/event/touch"
+	"nfyne/internal/driver/mobile/event/lifecycle"
+	"nfyne/internal/driver/mobile/event/paint"
+	"nfyne/internal/driver/mobile/event/size"
+	"nfyne/internal/driver/mobile/event/touch"
 )
 
 func init() {

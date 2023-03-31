@@ -11,7 +11,7 @@ import (
 	"github.com/urfave/cli/v2"
 )
 
-const fyneModule = "fyne.io/fyne/v2"
+const fyneModule = "nfyne"
 
 // Env returns the env command
 func Env() *cli.Command {

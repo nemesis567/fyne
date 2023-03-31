@@ -1,8 +1,7 @@
 package test
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/theme"
 )
 
 type mockCloud struct {

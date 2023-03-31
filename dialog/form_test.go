@@ -4,12 +4,11 @@ import (
 	"errors"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
+	"nfyne/test"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 // formDialogResult is the result of the test form dialog callback.

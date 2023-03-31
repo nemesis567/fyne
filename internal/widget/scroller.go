@@ -1,11 +1,10 @@
 package widget
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/driver/desktop"
+	"nfyne/internal/cache"
+	"nfyne/theme"
 )
 
 // ScrollDirection represents the directions in which a Scroll can scroll its child content.

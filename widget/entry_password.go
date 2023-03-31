@@ -1,10 +1,9 @@
 package widget
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/driver/desktop"
+	"nfyne/theme"
 )
 
 var _ desktop.Cursorable = (*passwordRevealer)(nil)

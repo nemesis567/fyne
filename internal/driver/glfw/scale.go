@@ -4,8 +4,6 @@ import (
 	"math"
 	"os"
 	"strconv"
-
-	"fyne.io/fyne/v2"
 )
 
 const (

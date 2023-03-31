@@ -4,8 +4,7 @@
 package app
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/theme"
 
 	"github.com/gopherjs/gopherjs/js"
 )

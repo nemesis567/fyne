@@ -5,8 +5,6 @@ package binding
 
 import (
 	"fmt"
-
-	"fyne.io/fyne/v2"
 )
 
 type stringFromBool struct {

@@ -7,12 +7,11 @@ import (
 	"image/color"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	internalWidget "fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/canvas"
+	internalWidget "nfyne/internal/widget"
+	"nfyne/test"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 func TestMenu_Layout(t *testing.T) {

@@ -5,12 +5,11 @@ import (
 	"image/color"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/cache"
-	col "fyne.io/fyne/v2/internal/color"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/internal/cache"
+	col "nfyne/internal/color"
+	"nfyne/test"
+	"nfyne/theme"
 
 	"github.com/stretchr/testify/assert"
 )

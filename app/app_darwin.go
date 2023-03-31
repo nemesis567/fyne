@@ -19,8 +19,7 @@ import (
 	"strings"
 	"unsafe"
 
-	"fyne.io/fyne/v2"
-	"golang.org/x/sys/execabs"
+	"nfyne"
 )
 
 func (a *fyneApp) SendNotification(n *fyne.Notification) {

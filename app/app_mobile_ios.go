@@ -18,8 +18,6 @@ import (
 	"net/url"
 	"path/filepath"
 	"unsafe"
-
-	"fyne.io/fyne/v2"
 )
 
 func rootConfigDir() string {

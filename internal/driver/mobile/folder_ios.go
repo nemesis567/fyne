@@ -20,8 +20,7 @@ import (
 	"strings"
 	"unsafe"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/storage"
+	"nfyne/storage"
 )
 
 func canListURI(uri fyne.URI) bool {

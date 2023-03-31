@@ -3,8 +3,6 @@ package repository
 import (
 	"io"
 	"strings"
-
-	"fyne.io/fyne/v2"
 )
 
 // splitNonEmpty works exactly like strings.Split(), but only returns non-empty

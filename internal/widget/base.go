@@ -3,9 +3,8 @@ package widget
 import (
 	"sync"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/cache"
+	"nfyne/canvas"
+	"nfyne/internal/cache"
 )
 
 // Base provides a helper that handles basic widget behaviours.

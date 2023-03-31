@@ -4,10 +4,9 @@ import (
 	"image/color"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/container"
+	"nfyne/test"
+	"nfyne/theme"
 )
 
 func Test_colorButton_Layout(t *testing.T) {

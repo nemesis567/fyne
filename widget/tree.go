@@ -1,12 +1,11 @@
 package widget
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/driver/desktop"
+	"nfyne/internal/cache"
+	"nfyne/internal/widget"
+	"nfyne/theme"
 )
 
 // TreeNodeID represents the unique id of a tree node.

@@ -9,14 +9,14 @@ import (
 	"os"
 	"testing"
 
-	"fyne.io/fyne/v2/internal/painter"
-	"fyne.io/fyne/v2/theme"
 	gotext "github.com/go-text/typesetting/font"
 	"github.com/goki/freetype/truetype"
 	"github.com/stretchr/testify/require"
+	"nfyne/internal/painter"
+	"nfyne/theme"
 
-	"fyne.io/fyne/v2/internal/test"
 	"github.com/stretchr/testify/assert"
+	"nfyne/internal/test"
 )
 
 func TestAssertImageMatches(t *testing.T) {

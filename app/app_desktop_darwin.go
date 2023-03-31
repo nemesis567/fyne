@@ -19,8 +19,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/theme"
 )
 
 // SetSystemTrayMenu creates a system tray item and attaches the specified menu.

@@ -3,11 +3,10 @@ package dialog
 import (
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
 	"github.com/stretchr/testify/assert"
+	"nfyne/test"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 func TestProgressInfiniteDialog_MinSize(t *testing.T) {

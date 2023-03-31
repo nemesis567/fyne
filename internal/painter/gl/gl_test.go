@@ -7,9 +7,8 @@ import (
 	"runtime"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/theme"
 )
 
 func init() {

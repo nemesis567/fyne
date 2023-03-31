@@ -1,7 +1,7 @@
 package gl
 
 import (
-	"fyne.io/fyne/v2/internal/driver/mobile/gl"
+	"nfyne/internal/driver/mobile/gl"
 )
 
 const (

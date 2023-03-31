@@ -2,8 +2,6 @@ package desktop
 
 import (
 	"testing"
-
-	"fyne.io/fyne/v2"
 )
 
 func TestCustomShortcut_Shortcut(t *testing.T) {

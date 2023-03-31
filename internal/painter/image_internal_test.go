@@ -4,8 +4,6 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-
-	"fyne.io/fyne/v2"
 )
 
 func TestIsFileSVG(t *testing.T) {

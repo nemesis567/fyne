@@ -4,8 +4,6 @@ import (
 	"os"
 	"sync/atomic"
 	"time"
-
-	"fyne.io/fyne/v2"
 )
 
 var (

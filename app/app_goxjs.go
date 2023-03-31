@@ -5,10 +5,6 @@
 
 package app
 
-import (
-	"fyne.io/fyne/v2"
-)
-
 func (app *fyneApp) SendNotification(_ *fyne.Notification) {
 	// TODO #2735
 	fyne.LogError("Sending notification is not supported yet.", nil)

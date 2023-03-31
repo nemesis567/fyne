@@ -6,13 +6,12 @@ import (
 	"math"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/driver/mobile"
-	"fyne.io/fyne/v2/internal/app"
-	"fyne.io/fyne/v2/internal/driver"
-	"fyne.io/fyne/v2/internal/driver/common"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/driver/mobile"
+	"nfyne/internal/app"
+	"nfyne/internal/driver"
+	"nfyne/internal/driver/common"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 const (

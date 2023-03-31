@@ -3,10 +3,9 @@ package widget
 import (
 	"image/color"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/driver/desktop"
+	"nfyne/theme"
 )
 
 const defaultPlaceHolder string = "(Select one)"

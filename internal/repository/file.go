@@ -8,9 +8,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/storage/repository"
+	"nfyne/storage"
+	"nfyne/storage/repository"
 )
 
 // fileSchemePrefix is used for when we need a hard-coded version of "file://"

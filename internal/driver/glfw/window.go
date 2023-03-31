@@ -7,13 +7,12 @@ import (
 	"runtime"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal"
-	"fyne.io/fyne/v2/internal/app"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/driver"
-	"fyne.io/fyne/v2/internal/driver/common"
+	"nfyne/driver/desktop"
+	"nfyne/internal"
+	"nfyne/internal/app"
+	"nfyne/internal/cache"
+	"nfyne/internal/driver"
+	"nfyne/internal/driver/common"
 )
 
 const (

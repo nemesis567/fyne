@@ -5,10 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	col "fyne.io/fyne/v2/internal/color"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	col "nfyne/internal/color"
+	"nfyne/theme"
 )
 
 const cursorInterruptTime = 300 * time.Millisecond

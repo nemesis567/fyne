@@ -6,14 +6,13 @@ import (
 	"strings"
 	"unicode"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/data/binding"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/driver/mobile"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/data/binding"
+	"nfyne/driver/desktop"
+	"nfyne/driver/mobile"
+	"nfyne/internal/cache"
+	"nfyne/internal/widget"
+	"nfyne/theme"
 )
 
 const (

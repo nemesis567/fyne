@@ -4,10 +4,9 @@ import (
 	"errors"
 	"testing"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal"
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/internal"
+	"nfyne/storage"
+	"nfyne/theme"
 
 	"github.com/stretchr/testify/assert"
 )

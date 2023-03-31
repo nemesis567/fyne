@@ -8,12 +8,11 @@ import (
 	"runtime"
 	"strings"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/storage/repository"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/container"
+	"nfyne/storage"
+	"nfyne/storage/repository"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 type viewLayout int

@@ -1,9 +1,5 @@
 package test
 
-import (
-	"fyne.io/fyne/v2"
-)
-
 type testWindow struct {
 	title              string
 	fullScreen         bool

@@ -1,12 +1,10 @@
 // Package theme defines how a Fyne app should look when rendered.
-package theme // import "fyne.io/fyne/v2/theme"
+package theme // import "nfyne/theme"
 
 import (
 	"image/color"
 	"os"
 	"strings"
-
-	"fyne.io/fyne/v2"
 )
 
 const (

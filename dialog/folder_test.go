@@ -6,11 +6,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/container"
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/test"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/container"
+	"nfyne/storage"
+	"nfyne/test"
+	"nfyne/widget"
 )
 
 func TestShowFolderOpen(t *testing.T) {

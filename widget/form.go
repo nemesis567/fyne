@@ -4,11 +4,10 @@ import (
 	"errors"
 	"reflect"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/layout"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/internal/cache"
+	"nfyne/layout"
+	"nfyne/theme"
 )
 
 // errFormItemInitialState defines the error if the initial validation for a FormItem result

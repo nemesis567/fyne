@@ -5,8 +5,6 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-
-	"fyne.io/fyne/v2"
 )
 
 var oldTheme = &legacyTheme{}

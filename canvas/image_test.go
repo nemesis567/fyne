@@ -10,10 +10,10 @@ import (
 	"strings"
 	"testing"
 
-	"fyne.io/fyne/v2/canvas"
-	intRepo "fyne.io/fyne/v2/internal/repository"
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/storage/repository"
+	"nfyne/canvas"
+	intRepo "nfyne/internal/repository"
+	"nfyne/storage"
+	"nfyne/storage/repository"
 
 	"github.com/stretchr/testify/assert"
 )

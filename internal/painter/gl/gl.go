@@ -5,8 +5,6 @@ package gl
 import (
 	"log"
 	"runtime"
-
-	"fyne.io/fyne/v2"
 )
 
 const floatSize = 4

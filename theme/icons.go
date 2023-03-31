@@ -1,8 +1,7 @@
 package theme
 
 import (
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal/svg"
+	"nfyne/internal/svg"
 )
 
 const (

@@ -3,8 +3,6 @@
 
 package mobile
 
-import "fyne.io/fyne/v2"
-
 const tapYOffset = 0 // no finger compensation on desktop (simulation)
 
 func (*device) SystemScaleForWindow(_ fyne.Window) float32 {

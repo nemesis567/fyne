@@ -3,8 +3,6 @@ package storage
 
 import (
 	"errors"
-
-	"fyne.io/fyne/v2"
 )
 
 // OpenFileFromURI loads a file read stream from a resource identifier.

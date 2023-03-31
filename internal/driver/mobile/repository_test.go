@@ -5,8 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"fyne.io/fyne/v2/storage"
-	"fyne.io/fyne/v2/storage/repository"
+	"nfyne/storage"
+	"nfyne/storage/repository"
 )
 
 func TestFileRepositoryChild(t *testing.T) {

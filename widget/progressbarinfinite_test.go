@@ -4,10 +4,9 @@ import (
 	"testing"
 	"time"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/internal/cache"
-	"fyne.io/fyne/v2/test"
 	"github.com/stretchr/testify/assert"
+	"nfyne/internal/cache"
+	"nfyne/test"
 )
 
 func TestProgressBarInfinite_Creation(t *testing.T) {

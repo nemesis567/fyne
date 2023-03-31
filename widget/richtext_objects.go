@@ -5,10 +5,9 @@ import (
 	"net/url"
 	"strconv"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/internal"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/internal"
+	"nfyne/theme"
 )
 
 var (

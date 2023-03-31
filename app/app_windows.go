@@ -14,8 +14,7 @@ import (
 
 	"golang.org/x/sys/windows/registry"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/theme"
 
 	"golang.org/x/sys/execabs"
 )

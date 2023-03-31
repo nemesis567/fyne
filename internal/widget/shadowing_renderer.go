@@ -1,9 +1,5 @@
 package widget
 
-import (
-	"fyne.io/fyne/v2"
-)
-
 // ShadowingRenderer is a renderer that adds a shadow arount the rendered content.
 // When using the ShadowingRenderer the embedding renderer should call
 // LayoutShadow(contentSize, contentPos) to lay out the shadow.

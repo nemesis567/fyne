@@ -51,7 +51,7 @@ import "C"
 import (
 	"unsafe"
 
-	"fyne.io/fyne/v2/internal/async"
+	"nfyne/internal/async"
 )
 
 const workbufLen = 3

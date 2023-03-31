@@ -1,9 +1,5 @@
 package mobile
 
-import (
-	"fyne.io/fyne/v2"
-)
-
 // KeyboardType represents a type of virtual keyboard
 type KeyboardType int32
 

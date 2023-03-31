@@ -1,16 +1,15 @@
 // Package dialog defines standard dialog windows for application GUIs.
-package dialog // import "fyne.io/fyne/v2/dialog"
+package dialog // import "nfyne/dialog"
 
 import (
 	"image/color"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/container"
-	col "fyne.io/fyne/v2/internal/color"
-	"fyne.io/fyne/v2/layout"
-	"fyne.io/fyne/v2/theme"
-	"fyne.io/fyne/v2/widget"
+	"nfyne/canvas"
+	"nfyne/container"
+	col "nfyne/internal/color"
+	"nfyne/layout"
+	"nfyne/theme"
+	"nfyne/widget"
 )
 
 const (

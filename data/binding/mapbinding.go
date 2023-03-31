@@ -3,8 +3,6 @@ package binding
 import (
 	"errors"
 	"reflect"
-
-	"fyne.io/fyne/v2"
 )
 
 // DataMap is the base interface for all bindable data maps.

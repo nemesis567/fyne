@@ -3,11 +3,10 @@ package widget
 import (
 	"image/color"
 
-	"fyne.io/fyne/v2"
-	"fyne.io/fyne/v2/canvas"
-	"fyne.io/fyne/v2/driver/desktop"
-	"fyne.io/fyne/v2/internal/widget"
-	"fyne.io/fyne/v2/theme"
+	"nfyne/canvas"
+	"nfyne/driver/desktop"
+	"nfyne/internal/widget"
+	"nfyne/theme"
 )
 
 var _ fyne.Widget = (*radioItem)(nil)

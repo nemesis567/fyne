@@ -5,8 +5,6 @@ package theme
 
 import (
 	"image/color"
-
-	"fyne.io/fyne/v2"
 )
 
 var (

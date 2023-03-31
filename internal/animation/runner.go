@@ -3,8 +3,6 @@ package animation
 import (
 	"sync"
 	"time"
-
-	"fyne.io/fyne/v2"
 )
 
 // Runner is the main driver for animations package

@@ -3,7 +3,7 @@ package binding
 import (
 	"sync"
 
-	"fyne.io/fyne/v2/internal/async"
+	"nfyne/internal/async"
 )
 
 var (

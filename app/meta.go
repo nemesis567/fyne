@@ -1,9 +1,5 @@
 package app
 
-import (
-	"fyne.io/fyne/v2"
-)
-
 var meta = fyne.AppMetadata{
 	ID:      "",
 	Name:    "",
