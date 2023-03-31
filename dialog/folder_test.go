@@ -6,10 +6,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/container"
-	"nfyne/storage"
-	"nfyne/test"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/storage"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func TestShowFolderOpen(t *testing.T) {

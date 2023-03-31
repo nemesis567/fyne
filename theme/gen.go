@@ -15,6 +15,7 @@ import (
 	"runtime"
 	"strings"
 
+	"github.com/nemesis567/fyne"
 	"golang.org/x/sys/execabs"
 )
 
@@ -58,7 +59,7 @@ func main() {
 
 	fmt.Println("Bundle fonts…")
 	f := &bytes.Buffer{}
-	f.WriteString(fileHeader + "\n\npackage theme\n\nimport \"nfyne\"\n\n")
+	f.WriteString(fileHeader + "\n\npackage theme\n\nimport \"github.com/nemesis567/fyne\"\n\n")
 	bundleFont(fontFace+"-Regular.ttf", "regular", f)
 	bundleFont(fontFace+"-Bold.ttf", "bold", f)
 	bundleFont(fontFace+"-Italic.ttf", "italic", f)
@@ -74,7 +75,7 @@ func main() {
 
 	fmt.Println("Bundle icons…")
 	f = &bytes.Buffer{}
-	f.WriteString(fileHeader + "\n\npackage theme\n\nimport \"nfyne\"\n\n")
+	f.WriteString(fileHeader + "\n\npackage theme\n\nimport \"github.com/nemesis567/fyne\"\n\n")
 	icon := path.Join(iconDir(), "fyne.png")
 	bundleFile("fyne-logo", icon, f)
 

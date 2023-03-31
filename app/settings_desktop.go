@@ -8,6 +8,7 @@ import (
 	"path/filepath"
 
 	"github.com/fsnotify/fsnotify"
+	"github.com/nemesis567/fyne"
 )
 
 func watchFileAddTarget(watcher *fsnotify.Watcher, path string) {

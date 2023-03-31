@@ -5,6 +5,8 @@ package binding
 
 import (
 	"fmt"
+
+	"github.com/nemesis567/fyne"
 )
 
 type stringFromBool struct {

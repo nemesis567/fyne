@@ -1,7 +1,8 @@
 package layout
 
 import (
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // Declare conformity with Layout interface

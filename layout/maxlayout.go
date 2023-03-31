@@ -1,5 +1,7 @@
 // Package layout defines the various layouts available to Fyne apps.
-package layout // import "nfyne/layout"
+package layout // import "github.com/nemesis567/fyne/layout"
+
+import "github.com/nemesis567/fyne"
 
 // Declare conformity with Layout interface
 var _ fyne.Layout = (*maxLayout)(nil)

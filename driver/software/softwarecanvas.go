@@ -1,8 +1,8 @@
 package software
 
 import (
-	"nfyne/internal/painter/software"
-	"nfyne/test"
+	"github.com/nemesis567/fyne/internal/painter/software"
+	"github.com/nemesis567/fyne/test"
 )
 
 // NewCanvas creates a new canvas in memory that can render without hardware support.

@@ -2,6 +2,8 @@ package binding
 
 import (
 	"sync"
+
+	"github.com/nemesis567/fyne"
 )
 
 type preferenceItem interface {

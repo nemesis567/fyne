@@ -5,9 +5,11 @@ import (
 	"path/filepath"
 	"testing"
 
+	"github.com/nemesis567/fyne"
 	"github.com/stretchr/testify/assert"
-	"nfyne/test"
-	"nfyne/theme"
+
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
 )
 
 func TestSettingsBuildType(t *testing.T) {

@@ -1,12 +1,13 @@
 package mobile
 
 import (
-	"nfyne/container"
-	"nfyne/internal/cache"
-	"nfyne/internal/driver/common"
-	"nfyne/layout"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/internal/driver/common"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 type window struct {

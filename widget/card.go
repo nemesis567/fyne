@@ -1,9 +1,10 @@
 package widget
 
 import (
-	"nfyne/canvas"
-	"nfyne/internal/widget"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // Card widget groups title, subtitle with content and a header image

@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/data/binding"
+	"github.com/nemesis567/fyne/test"
 	"github.com/stretchr/testify/assert"
-	"nfyne/data/binding"
-	"nfyne/test"
 )
 
 func TestNewProgressBarWithData(t *testing.T) {

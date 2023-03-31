@@ -12,7 +12,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/theme"
 )
 
 func TestDefaultTheme(t *testing.T) {

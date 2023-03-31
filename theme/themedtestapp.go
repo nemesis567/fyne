@@ -4,6 +4,8 @@ package theme
 
 import (
 	"net/url"
+
+	"github.com/nemesis567/fyne"
 )
 
 type themedApp struct {

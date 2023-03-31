@@ -1,5 +1,7 @@
 package desktop
 
+import "github.com/nemesis567/fyne"
+
 // Canvas defines the desktop specific extensions to a fyne.Canvas.
 type Canvas interface {
 	OnKeyDown() func(*fyne.KeyEvent)

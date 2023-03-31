@@ -1,5 +1,7 @@
 package layout
 
+import "github.com/nemesis567/fyne"
+
 // Declare conformity with Layout interface
 var _ fyne.Layout = (*centerLayout)(nil)
 

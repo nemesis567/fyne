@@ -3,10 +3,11 @@ package dialog
 import (
 	"image/color"
 
-	"nfyne/container"
-	col "nfyne/internal/color"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/container"
+	col "github.com/nemesis567/fyne/internal/color"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 // newColorBasicPicker returns a component for selecting basic colors.

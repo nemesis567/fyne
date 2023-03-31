@@ -4,7 +4,8 @@
 package mobile
 
 import (
-	"nfyne/storage"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/storage"
 )
 
 func nativeURI(path string) fyne.URI {

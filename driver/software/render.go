@@ -3,7 +3,8 @@ package software
 import (
 	"image"
 
-	"nfyne/internal/app"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/app"
 )
 
 // RenderCanvas takes a canvas and renders it to a regular Go image using the provided Theme.

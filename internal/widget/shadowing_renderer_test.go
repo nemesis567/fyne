@@ -5,8 +5,9 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	w "nfyne/internal/widget"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	w "github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func TestShadowingRenderer_Objects(t *testing.T) {

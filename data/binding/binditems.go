@@ -5,6 +5,8 @@ package binding
 
 import (
 	"bytes"
+
+	"github.com/nemesis567/fyne"
 )
 
 // Bool supports binding a bool value.

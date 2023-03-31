@@ -6,11 +6,11 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nemesis567/fyne/canvas"
+	col "github.com/nemesis567/fyne/internal/color"
+	_ "github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
 	"github.com/stretchr/testify/assert"
-	"nfyne/canvas"
-	col "nfyne/internal/color"
-	_ "nfyne/test"
-	"nfyne/theme"
 )
 
 func TestEntryCursorAnim(t *testing.T) {

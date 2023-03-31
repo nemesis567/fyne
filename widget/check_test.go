@@ -5,10 +5,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/data/binding"
-	"nfyne/layout"
-	"nfyne/test"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/data/binding"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func TestCheck_Binding(t *testing.T) {

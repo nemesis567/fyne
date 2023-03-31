@@ -3,7 +3,8 @@ package tutorials
 import (
 	"image/color"
 
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/theme"
 )
 
 var (

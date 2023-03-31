@@ -4,8 +4,9 @@
 package app
 
 import (
-	"nfyne/internal/painter/software"
-	"nfyne/test"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/painter/software"
+	"github.com/nemesis567/fyne/test"
 )
 
 // NewWithID returns a new app instance using the test (headless) driver.

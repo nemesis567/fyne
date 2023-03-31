@@ -7,9 +7,10 @@ import (
 	"sync"
 	"testing"
 
-	"nfyne/container"
-	"nfyne/internal/cache"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/widget"
 
 	"github.com/stretchr/testify/assert"
 )

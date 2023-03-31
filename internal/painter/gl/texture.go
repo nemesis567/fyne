@@ -7,9 +7,10 @@ import (
 	"image/draw"
 	"math"
 
-	"nfyne/canvas"
-	"nfyne/internal/cache"
-	paint "nfyne/internal/painter"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/cache"
+	paint "github.com/nemesis567/fyne/internal/painter"
 )
 
 var noTexture = Texture(cache.NoTexture)

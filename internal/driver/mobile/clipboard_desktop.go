@@ -3,6 +3,8 @@
 
 package mobile
 
+import "github.com/nemesis567/fyne"
+
 // Content returns the clipboard content for mobile simulator runs
 func (c *mobileClipboard) Content() string {
 	fyne.LogError("Clipboard is not supported in mobile simulation", nil)

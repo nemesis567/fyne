@@ -3,10 +3,11 @@ package widget
 import (
 	"strings"
 
-	"nfyne/canvas"
-	"nfyne/internal/widget"
-	"nfyne/storage"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/storage"
+	"github.com/nemesis567/fyne/theme"
 )
 
 const (

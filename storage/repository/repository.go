@@ -4,6 +4,8 @@ package repository
 import (
 	"fmt"
 	"strings"
+
+	"github.com/nemesis567/fyne"
 )
 
 // repositoryTable stores the mapping of schemes to Repository implementations.

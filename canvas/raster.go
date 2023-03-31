@@ -4,6 +4,8 @@ import (
 	"image"
 	"image/color"
 	"image/draw"
+
+	"github.com/nemesis567/fyne"
 )
 
 // Declare conformity with CanvasObject interface

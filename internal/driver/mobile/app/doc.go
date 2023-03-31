@@ -85,4 +85,4 @@ response to lifecycle events. Such packages should call:
 
 in an init function inside that package.
 */
-package app // import "nfyne/internal/driver/mobile/app"
+package app // import "github.com/nemesis567/fyne/internal/driver/mobile/app"

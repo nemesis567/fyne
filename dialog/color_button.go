@@ -3,11 +3,12 @@ package dialog
 import (
 	"image/color"
 
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	internalwidget "nfyne/internal/widget"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	internalwidget "github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 var _ fyne.Widget = (*colorButton)(nil)

@@ -7,9 +7,9 @@
 //
 //	package main
 //
-//	import "nfyne/app"
-//	import "nfyne/container"
-//	import "nfyne/widget"
+//	import "github.com/nemesis567/fyne/app"
+//	import "github.com/nemesis567/fyne/container"
+//	import "github.com/nemesis567/fyne/widget"
 //
 //	func main() {
 //		a := app.New()
@@ -25,4 +25,4 @@
 //
 //		w.ShowAndRun()
 //	}
-package fyne // import "nfyne"
+package fyne // import "github.com/nemesis567/fyne"

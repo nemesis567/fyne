@@ -1,8 +1,8 @@
 package main
 
 import (
-	"nfyne"
-	"nfyne/app"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/app"
 )
 
 func init() {

@@ -2,6 +2,8 @@ package storage
 
 import (
 	"strings"
+
+	"github.com/nemesis567/fyne"
 )
 
 // FileFilter is an interface that can be implemented to provide a filter to a file dialog.

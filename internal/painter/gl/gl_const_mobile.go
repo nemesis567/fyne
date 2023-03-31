@@ -7,7 +7,7 @@
 package gl
 
 import (
-	"nfyne/internal/driver/mobile/gl"
+	"github.com/nemesis567/fyne/internal/driver/mobile/gl"
 )
 
 const (

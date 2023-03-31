@@ -5,7 +5,8 @@
 package app
 
 import (
-	"nfyne/internal/driver/mobile"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/driver/mobile"
 )
 
 var systemTheme fyne.ThemeVariant

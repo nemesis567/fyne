@@ -3,7 +3,7 @@
 
 package theme
 
-import "nfyne"
+import "github.com/nemesis567/fyne"
 
 var fynelogo = &fyne.StaticResource{
 	StaticName:    "fyne.png",

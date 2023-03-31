@@ -1,5 +1,9 @@
 package mobile
 
+import (
+	"github.com/nemesis567/fyne"
+)
+
 // KeyboardType represents a type of virtual keyboard
 type KeyboardType int32
 

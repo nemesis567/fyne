@@ -3,7 +3,7 @@ package validation_test
 import (
 	"testing"
 
-	"nfyne/data/validation"
+	"github.com/nemesis567/fyne/data/validation"
 
 	"github.com/stretchr/testify/assert"
 )

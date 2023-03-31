@@ -6,8 +6,8 @@ package dialog
 import (
 	"testing"
 
+	"github.com/nemesis567/fyne/storage"
 	"github.com/stretchr/testify/assert"
-	"nfyne/storage"
 )
 
 func TestIsHidden(t *testing.T) {

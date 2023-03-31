@@ -3,11 +3,12 @@ package widget
 import (
 	"testing"
 
-	"nfyne/canvas"
-	"nfyne/data/binding"
-	"nfyne/internal/painter/software"
-	"nfyne/test"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/data/binding"
+	"github.com/nemesis567/fyne/internal/painter/software"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
 
 	"github.com/stretchr/testify/assert"
 )

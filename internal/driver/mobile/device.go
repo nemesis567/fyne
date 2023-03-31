@@ -1,8 +1,10 @@
 package mobile
 
 import (
-	"nfyne/driver/mobile"
-	"nfyne/internal/driver/mobile/event/size"
+	"github.com/nemesis567/fyne/driver/mobile"
+	"github.com/nemesis567/fyne/internal/driver/mobile/event/size"
+
+	"github.com/nemesis567/fyne"
 )
 
 type device struct {

@@ -1,5 +1,9 @@
 package validation
 
+import (
+	"github.com/nemesis567/fyne"
+)
+
 // NewAllStrings creates a validator that requires all of the passed string validators to pass.
 // In short, it combines multiple string validators into one.
 //

@@ -1,5 +1,7 @@
 package mobile
 
+import "github.com/nemesis567/fyne"
+
 func (d *mobileDriver) StartAnimation(a *fyne.Animation) {
 	d.animation.Start(a)
 }

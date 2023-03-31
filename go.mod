@@ -1,4 +1,4 @@
-module nfyne
+module github.com/nemesis567/fyne
 
 go 1.14
 

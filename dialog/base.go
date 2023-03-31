@@ -1,15 +1,16 @@
 // Package dialog defines standard dialog windows for application GUIs.
-package dialog // import "nfyne/dialog"
+package dialog // import "github.com/nemesis567/fyne/dialog"
 
 import (
 	"image/color"
 
-	"nfyne/canvas"
-	"nfyne/container"
-	col "nfyne/internal/color"
-	"nfyne/layout"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	col "github.com/nemesis567/fyne/internal/color"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 const (

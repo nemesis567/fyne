@@ -4,9 +4,10 @@ import (
 	"fmt"
 	"strconv"
 
-	"nfyne/container"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 // collectionScreen loads a tab panel for collection widgets

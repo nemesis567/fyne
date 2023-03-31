@@ -2,7 +2,7 @@
 
 package async
 
-import "nfyne"
+import "github.com/nemesis567/fyne"
 
 // UnboundedCanvasObjectChan is a channel with an unbounded buffer for caching
 // CanvasObject objects. A channel must be closed via Close method.

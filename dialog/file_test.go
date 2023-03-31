@@ -9,12 +9,13 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/container"
-	"nfyne/layout"
-	"nfyne/storage"
-	"nfyne/test"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/storage"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 // comparePaths compares if two file paths point to the same thing, and calls

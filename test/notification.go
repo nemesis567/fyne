@@ -3,6 +3,8 @@ package test
 import (
 	"testing"
 
+	"github.com/nemesis567/fyne"
+
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 )

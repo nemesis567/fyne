@@ -6,7 +6,8 @@ package dialog
 import (
 	"os"
 
-	"nfyne/storage"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/storage"
 )
 
 func getFavoriteLocations() (map[string]fyne.ListableURI, error) {

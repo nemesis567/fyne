@@ -4,11 +4,12 @@ import (
 	"image/color"
 	"testing"
 
-	"nfyne/canvas"
-	"nfyne/container"
-	"nfyne/layout"
-	_ "nfyne/test"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/layout"
+	_ "github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
 
 	"github.com/stretchr/testify/assert"
 )

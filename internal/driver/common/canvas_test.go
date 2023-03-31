@@ -6,11 +6,12 @@ import (
 	"image/color"
 	"testing"
 
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
 	"github.com/stretchr/testify/assert"
-	"nfyne/canvas"
-	"nfyne/container"
-	"nfyne/test"
-	"nfyne/theme"
 )
 
 func TestCanvas_walkTree(t *testing.T) {

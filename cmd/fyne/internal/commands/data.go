@@ -1,6 +1,6 @@
 package commands
 
-import "nfyne/cmd/fyne/internal/metadata"
+import "github.com/nemesis567/fyne/cmd/fyne/internal/metadata"
 
 type appData struct {
 	icon, Name        string

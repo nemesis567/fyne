@@ -7,11 +7,12 @@ import (
 	"image/color"
 	"testing"
 
-	"nfyne/canvas"
-	internalWidget "nfyne/internal/widget"
-	"nfyne/test"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	internalWidget "github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func TestMenu_Layout(t *testing.T) {

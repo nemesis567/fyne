@@ -47,7 +47,7 @@ import "C"
 import (
 	"unsafe"
 
-	"nfyne/internal/async"
+	"github.com/nemesis567/fyne/internal/async"
 )
 
 const workbufLen = 3

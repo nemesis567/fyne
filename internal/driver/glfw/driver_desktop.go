@@ -10,10 +10,11 @@ import (
 	"sync"
 
 	"fyne.io/systray"
-	"nfyne/canvas"
-	"nfyne/internal/painter"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/painter"
 
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/theme"
 )
 
 var (

@@ -3,6 +3,8 @@ package storage
 
 import (
 	"errors"
+
+	"github.com/nemesis567/fyne"
 )
 
 // OpenFileFromURI loads a file read stream from a resource identifier.

@@ -1,7 +1,8 @@
 package storage
 
 import (
-	"nfyne/storage/repository"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/storage/repository"
 )
 
 // NewFileURI creates a new URI from the given file path.

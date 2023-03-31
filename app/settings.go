@@ -6,7 +6,8 @@ import (
 	"path/filepath"
 	"sync"
 
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // SettingsSchema is used for loading and storing global settings

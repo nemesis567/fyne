@@ -1,8 +1,9 @@
 package mobile
 
 import (
-	"nfyne/driver/mobile"
-	"nfyne/internal/driver/mobile/app"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/driver/mobile"
+	"github.com/nemesis567/fyne/internal/driver/mobile/app"
 )
 
 func showVirtualKeyboard(keyboard mobile.KeyboardType) {

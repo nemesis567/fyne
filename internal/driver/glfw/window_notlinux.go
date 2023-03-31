@@ -3,6 +3,8 @@
 
 package glfw
 
+import "github.com/nemesis567/fyne"
+
 func (w *window) platformResize(canvasSize fyne.Size) {
 	d, ok := fyne.CurrentApp().Driver().(*gLDriver)
 	if !ok { // don't wait to redraw in this way if we are running on test

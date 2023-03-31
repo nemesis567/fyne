@@ -4,9 +4,10 @@ import (
 	"image/color"
 	"testing"
 
-	"nfyne/canvas"
-	"nfyne/internal/widget"
-	"nfyne/test"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/test"
 )
 
 func TestNewSimpleRenderer(t *testing.T) {

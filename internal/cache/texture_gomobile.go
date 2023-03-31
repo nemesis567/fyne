@@ -3,7 +3,7 @@
 
 package cache
 
-import "nfyne/internal/driver/mobile/gl"
+import "github.com/nemesis567/fyne/internal/driver/mobile/gl"
 
 // TextureType represents an uploaded GL texture
 type TextureType = gl.Texture

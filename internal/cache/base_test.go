@@ -7,6 +7,7 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nemesis567/fyne"
 	"github.com/stretchr/testify/assert"
 )
 

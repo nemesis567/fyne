@@ -14,6 +14,8 @@ import (
 	"strings"
 
 	gl "github.com/go-gl/gl/v3.1/gles2"
+
+	"github.com/nemesis567/fyne"
 )
 
 const (

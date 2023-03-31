@@ -3,10 +3,11 @@ package widget_test
 import (
 	"testing"
 
-	internalWidget "nfyne/internal/widget"
-	"nfyne/test"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	internalWidget "github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 
 	"github.com/stretchr/testify/assert"
 )

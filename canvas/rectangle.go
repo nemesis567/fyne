@@ -2,6 +2,8 @@ package canvas
 
 import (
 	"image/color"
+
+	"github.com/nemesis567/fyne"
 )
 
 // Declare conformity with CanvasObject interface

@@ -4,6 +4,8 @@ package validation
 import (
 	"errors"
 	"regexp"
+
+	"github.com/nemesis567/fyne"
 )
 
 // NewRegexp creates a new validator that uses regular expression parsing.

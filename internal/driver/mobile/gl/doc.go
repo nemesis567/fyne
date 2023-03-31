@@ -22,7 +22,7 @@ https://www.khronos.org/opengles/sdk/docs/man/
 One notable departure from the C API is the introduction of types
 to represent common uses of GLint: Texture, Surface, Buffer, etc.
 */
-package gl // import "nfyne/internal/driver/mobile/gl"
+package gl // import "github.com/nemesis567/fyne/internal/driver/mobile/gl"
 
 /*
 Implementation details.

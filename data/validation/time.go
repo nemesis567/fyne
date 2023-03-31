@@ -2,6 +2,8 @@ package validation
 
 import (
 	"time"
+
+	"github.com/nemesis567/fyne"
 )
 
 // NewTime creates a new validator that verifies times using time.Parse.

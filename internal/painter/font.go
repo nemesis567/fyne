@@ -16,8 +16,9 @@ import (
 	"golang.org/x/image/font"
 	"golang.org/x/image/math/fixed"
 
-	"nfyne/internal/cache"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/theme"
 )
 
 const (

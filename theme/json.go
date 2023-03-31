@@ -8,7 +8,8 @@ import (
 	"io"
 	"strings"
 
-	"nfyne/storage"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/storage"
 )
 
 // FromJSON returns a Theme created from the given JSON metadata.

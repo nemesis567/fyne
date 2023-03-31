@@ -6,8 +6,8 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/nemesis567/fyne/internal/async"
 	"github.com/stretchr/testify/assert"
-	"nfyne/internal/async"
 )
 
 func TestMain(m *testing.M) {

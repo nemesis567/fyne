@@ -8,13 +8,13 @@
 package app
 
 import (
-	"nfyne/internal/async"
-	"nfyne/internal/driver/mobile/event/lifecycle"
-	"nfyne/internal/driver/mobile/event/size"
-	"nfyne/internal/driver/mobile/gl"
+	"github.com/nemesis567/fyne/internal/async"
+	"github.com/nemesis567/fyne/internal/driver/mobile/event/lifecycle"
+	"github.com/nemesis567/fyne/internal/driver/mobile/event/size"
+	"github.com/nemesis567/fyne/internal/driver/mobile/gl"
 
 	// Initialize necessary mobile functionality, such as logging.
-	_ "nfyne/internal/driver/mobile/mobileinit"
+	_ "github.com/nemesis567/fyne/internal/driver/mobile/mobileinit"
 )
 
 // Main is called by the main.main function to run the mobile application.

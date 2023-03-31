@@ -6,8 +6,8 @@ import (
 	"os"
 	"runtime/debug"
 
+	"github.com/nemesis567/fyne/cmd/fyne/internal/commands"
 	"github.com/urfave/cli/v2"
-	"nfyne/cmd/fyne/internal/commands"
 )
 
 func main() {

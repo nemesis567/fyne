@@ -1,9 +1,9 @@
 <p align="center">
-  <a href="https://pkg.go.dev/nfyne?tab=doc" title="Go API Reference" rel="nofollow"><img src="https://img.shields.io/badge/go-documentation-blue.svg?style=flat" alt="Go API Reference"></a>
+  <a href="https://pkg.go.dev/github.com/nemesis567/fyne?tab=doc" title="Go API Reference" rel="nofollow"><img src="https://img.shields.io/badge/go-documentation-blue.svg?style=flat" alt="Go API Reference"></a>
   <a href="https://img.shields.io/github/v/release/fyne-io/fyne?include_prereleases" title="Latest Release" rel="nofollow"><img src="https://img.shields.io/github/v/release/fyne-io/fyne?include_prereleases" alt="Latest Release"></a>
   <a href='http://gophers.slack.com/messages/fyne'><img src='https://img.shields.io/badge/join-us%20on%20slack-gray.svg?longCache=true&logo=slack&colorB=blue' alt='Join us on Slack' /></a>
   <br />
-  <a href="https://goreportcard.com/report/nfyne"><img src="https://goreportcard.com/badge/nfyne" alt="Code Status" /></a>
+  <a href="https://goreportcard.com/report/github.com/nemesis567/fyne"><img src="https://goreportcard.com/badge/github.com/nemesis567/fyne" alt="Code Status" /></a>
   <a href="https://github.com/fyne-io/fyne/actions"><img src="https://github.com/fyne-io/fyne/workflows/Platform%20Tests/badge.svg" alt="Build Status" /></a>
   <a href='https://coveralls.io/github/fyne-io/fyne?branch=develop'><img src='https://coveralls.io/repos/github/fyne-io/fyne/badge.svg?branch=develop' alt='Coverage Status' /></a>
 </p>
@@ -29,16 +29,16 @@ If you're not sure if that's all installed or you don't know how then check out 
 
 Using the standard go tools you can install Fyne's core library using:
 
-    go get nfyne
+    go get github.com/nemesis567/fyne
 
 # Widget demo
 
 To run a showcase of the features of Fyne execute the following:
 
-    go install nfyne/cmd/fyne_demo@latest
+    go install github.com/nemesis567/fyne/cmd/fyne_demo@latest
     fyne_demo
 
-(For Go versions earlier than v1.16 use `go get nfyne/cmd/fyne_demo`)
+(For Go versions earlier than v1.16 use `go get github.com/nemesis567/fyne/cmd/fyne_demo`)
 
 And you should see something like this (after you click a few buttons):
 
@@ -70,9 +70,9 @@ Open a new file and you're ready to write your first app!
 package main
 
 import (
-	"nfyne/app"
-	"nfyne/container"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne/app"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func main() {
@@ -124,10 +124,10 @@ Using `go install` will copy the executable into your go `bin` dir.
 To install the application with icons etc into your operating system's standard
 application location you can use the fyne utility and the "install" subcommand.
 
-    go install nfyne/cmd/fyne@latest
+    go install github.com/nemesis567/fyne/cmd/fyne@latest
     fyne install
 
-(for Go versions before v1.16 use `go get nfyne/cmd/fyne`)
+(for Go versions before v1.16 use `go get github.com/nemesis567/fyne/cmd/fyne`)
 
 # Packaging for mobile
 
@@ -161,7 +161,7 @@ The above command will create a '.ipa' file that can then be uploaded to the iOS
 
 # Documentation
 
-More documentation is available at the [Fyne developer website](https://developer.fyne.io/) or on [pkg.go.dev](https://pkg.go.dev/nfyne?tab=doc).
+More documentation is available at the [Fyne developer website](https://developer.fyne.io/) or on [pkg.go.dev](https://pkg.go.dev/github.com/nemesis567/fyne?tab=doc).
 
 # Examples
 
@@ -179,7 +179,7 @@ It is recommended that you install the following additional apps:
 
 | app | go install | description |
 | --- | ------ | ----------- |
-| fyne_settings | `nfyne/cmd/fyne_settings` | A GUI for managing your global Fyne settings like theme and scaling |
+| fyne_settings | `github.com/nemesis567/fyne/cmd/fyne_settings` | A GUI for managing your global Fyne settings like theme and scaling |
 | apps | `github.com/fyne-io/apps` | A graphical installer for the Fyne apps listed at https://apps.fyne.io |
 
 These are optional applications but can help to create a more complete desktop experience.

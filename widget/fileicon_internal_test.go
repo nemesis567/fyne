@@ -10,9 +10,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/storage"
-	"nfyne/test"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/storage"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // Simulate being rendered by calling CreateRenderer() to update icon

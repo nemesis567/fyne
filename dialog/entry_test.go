@@ -3,8 +3,8 @@ package dialog
 import (
 	"testing"
 
+	"github.com/nemesis567/fyne/test"
 	"github.com/stretchr/testify/assert"
-	"nfyne/test"
 )
 
 func TestEntryDialog_Confirm(t *testing.T) {

@@ -4,10 +4,11 @@ import (
 	"errors"
 	"reflect"
 
-	"nfyne/canvas"
-	"nfyne/internal/cache"
-	"nfyne/layout"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // errFormItemInitialState defines the error if the initial validation for a FormItem result

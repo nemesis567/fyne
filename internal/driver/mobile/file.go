@@ -3,8 +3,9 @@ package mobile
 import (
 	"io"
 
-	"nfyne/internal/driver/mobile/app"
-	"nfyne/storage"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/driver/mobile/app"
+	"github.com/nemesis567/fyne/storage"
 )
 
 type fileOpen struct {

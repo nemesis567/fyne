@@ -1,8 +1,9 @@
 package widget
 
 import (
-	"nfyne/canvas"
-	"nfyne/internal/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/widget"
 )
 
 // RadioGroup widget has a list of text labels and checks check icons next to each.

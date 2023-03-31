@@ -3,6 +3,8 @@ package animation
 import (
 	"sync/atomic"
 	"time"
+
+	"github.com/nemesis567/fyne"
 )
 
 type anim struct {

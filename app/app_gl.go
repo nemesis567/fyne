@@ -4,7 +4,8 @@
 package app
 
 import (
-	"nfyne/internal/driver/glfw"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/driver/glfw"
 )
 
 // NewWithID returns a new app instance using the appropriate runtime driver.

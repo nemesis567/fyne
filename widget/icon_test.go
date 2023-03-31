@@ -3,10 +3,11 @@ package widget_test
 import (
 	"testing"
 
-	"nfyne/layout"
-	"nfyne/test"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func TestIcon_Layout(t *testing.T) {

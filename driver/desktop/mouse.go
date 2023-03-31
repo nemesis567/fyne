@@ -1,5 +1,7 @@
 package desktop
 
+import "github.com/nemesis567/fyne"
+
 // MouseButton represents a single button in a desktop MouseEvent
 type MouseButton int
 

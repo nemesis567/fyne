@@ -11,10 +11,11 @@ import (
 	"strings"
 	"unsafe"
 
-	"nfyne/canvas"
-	"nfyne/internal/painter"
-	"nfyne/internal/svg"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/painter"
+	"github.com/nemesis567/fyne/internal/svg"
+	"github.com/nemesis567/fyne/theme"
 )
 
 /*

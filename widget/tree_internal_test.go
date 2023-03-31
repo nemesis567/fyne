@@ -5,10 +5,11 @@ import (
 	"testing"
 	"time"
 
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	"nfyne/test"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
 
 	"github.com/stretchr/testify/assert"
 )

@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"nfyne/cmd/fyne/internal/templates"
+	"github.com/nemesis567/fyne/cmd/fyne/internal/templates"
 
 	"github.com/jackmordaunt/icns/v2"
 )

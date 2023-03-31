@@ -5,12 +5,13 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	internalWidget "github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
 	"github.com/stretchr/testify/assert"
-	"nfyne/canvas"
-	internalWidget "nfyne/internal/widget"
-	"nfyne/layout"
-	"nfyne/test"
-	"nfyne/theme"
 )
 
 type myWidget struct {

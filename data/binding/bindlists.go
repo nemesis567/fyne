@@ -5,6 +5,8 @@ package binding
 
 import (
 	"bytes"
+
+	"github.com/nemesis567/fyne"
 )
 
 // BoolList supports binding a list of bool values.

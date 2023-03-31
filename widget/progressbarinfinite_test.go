@@ -4,9 +4,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/test"
 	"github.com/stretchr/testify/assert"
-	"nfyne/internal/cache"
-	"nfyne/test"
 )
 
 func TestProgressBarInfinite_Creation(t *testing.T) {

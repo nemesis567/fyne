@@ -4,9 +4,10 @@ import (
 	"image/color"
 	"net/url"
 
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/theme"
 )
 
 var _ fyne.Focusable = (*Hyperlink)(nil)

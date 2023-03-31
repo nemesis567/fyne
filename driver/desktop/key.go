@@ -1,5 +1,9 @@
 package desktop
 
+import (
+	"github.com/nemesis567/fyne"
+)
+
 const (
 	// KeyNone represents no key
 	KeyNone fyne.KeyName = ""

@@ -1,9 +1,10 @@
 package mobile
 
 import (
-	"nfyne/canvas"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 type menuButton struct {

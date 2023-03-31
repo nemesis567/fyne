@@ -3,8 +3,9 @@ package widget
 import (
 	"image/color"
 
-	"nfyne/canvas"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/theme"
 )
 
 var _ fyne.Widget = (*Shadow)(nil)

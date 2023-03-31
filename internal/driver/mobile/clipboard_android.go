@@ -15,7 +15,7 @@ import "C"
 import (
 	"unsafe"
 
-	"nfyne/internal/driver/mobile/app"
+	"github.com/nemesis567/fyne/internal/driver/mobile/app"
 )
 
 // Content returns the clipboard content for Android

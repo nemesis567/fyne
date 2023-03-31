@@ -4,6 +4,8 @@ import (
 	"io"
 	"os"
 	"path/filepath"
+
+	"github.com/nemesis567/fyne"
 )
 
 // Exists will return true if the passed path exists on the current system.

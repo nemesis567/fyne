@@ -7,7 +7,8 @@ import (
 	"sync"
 	"time"
 
-	"nfyne/internal"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal"
 )
 
 type preferences struct {

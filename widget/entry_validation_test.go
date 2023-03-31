@@ -4,10 +4,10 @@ import (
 	"errors"
 	"testing"
 
-	"nfyne/data/validation"
-	"nfyne/test"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne/data/validation"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 
 	"github.com/stretchr/testify/assert"
 )

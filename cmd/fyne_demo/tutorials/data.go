@@ -1,5 +1,9 @@
 package tutorials
 
+import (
+	"github.com/nemesis567/fyne"
+)
+
 // Tutorial defines the data structure for a tutorial
 type Tutorial struct {
 	Title, Intro string

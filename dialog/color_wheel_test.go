@@ -3,7 +3,8 @@ package dialog
 import (
 	"testing"
 
-	"nfyne/test"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/test"
 )
 
 func Test_colorWheel_Layout(t *testing.T) {

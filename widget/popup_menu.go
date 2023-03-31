@@ -1,7 +1,8 @@
 package widget
 
 import (
-	"nfyne/internal/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/widget"
 )
 
 var _ fyne.Widget = (*PopUpMenu)(nil)

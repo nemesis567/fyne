@@ -3,8 +3,9 @@ package internal
 import (
 	"sync"
 
-	"nfyne/internal/app"
-	"nfyne/internal/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/app"
+	"github.com/nemesis567/fyne/internal/widget"
 )
 
 // OverlayStack implements fyne.OverlayStack

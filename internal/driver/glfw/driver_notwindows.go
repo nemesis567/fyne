@@ -3,6 +3,8 @@
 
 package glfw
 
+import "github.com/nemesis567/fyne"
+
 func logError(msg string, err error) {
 	fyne.LogError(msg, err)
 }

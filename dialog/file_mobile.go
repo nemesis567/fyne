@@ -6,8 +6,9 @@ package dialog
 import (
 	"os"
 
-	"nfyne/internal/driver/mobile"
-	"nfyne/storage"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/driver/mobile"
+	"github.com/nemesis567/fyne/storage"
 )
 
 func (f *fileDialog) getPlaces() []favoriteItem {

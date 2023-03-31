@@ -5,6 +5,8 @@ package binding
 
 import (
 	"sync/atomic"
+
+	"github.com/nemesis567/fyne"
 )
 
 const keyTypeMismatchError = "A previous preference binding exists with different type for key: "

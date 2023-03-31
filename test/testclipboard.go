@@ -1,5 +1,7 @@
 package test
 
+import "github.com/nemesis567/fyne"
+
 type testClipboard struct {
 	content string
 }

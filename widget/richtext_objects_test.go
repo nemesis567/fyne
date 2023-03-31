@@ -4,9 +4,10 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/test"
 	"github.com/stretchr/testify/assert"
-	"nfyne/canvas"
-	"nfyne/test"
 )
 
 func TestRichText_HyperLink(t *testing.T) {

@@ -1,10 +1,11 @@
 package widget
 
 import (
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	"nfyne/internal/cache"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // ScrollDirection represents the directions in which a Scroll can scroll its child content.

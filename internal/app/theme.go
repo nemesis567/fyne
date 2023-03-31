@@ -1,7 +1,8 @@
 package app
 
 import (
-	"nfyne/internal/cache"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/cache"
 )
 
 // ApplyThemeTo ensures that the specified canvasobject and all widgets and themeable objects will

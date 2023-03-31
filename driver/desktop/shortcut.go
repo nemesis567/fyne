@@ -3,6 +3,8 @@ package desktop
 import (
 	"runtime"
 	"strings"
+
+	"github.com/nemesis567/fyne"
 )
 
 // Declare conformity with Shortcut interface

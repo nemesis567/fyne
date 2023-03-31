@@ -1,8 +1,9 @@
 package widget
 
 import (
-	"nfyne/data/binding"
-	"nfyne/internal/cache"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/data/binding"
+	"github.com/nemesis567/fyne/internal/cache"
 )
 
 // Label widget is a label component with appropriate padding and layout.

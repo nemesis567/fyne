@@ -8,11 +8,12 @@ import (
 	"runtime"
 	"strings"
 
-	"nfyne/container"
-	"nfyne/storage"
-	"nfyne/storage/repository"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/storage"
+	"github.com/nemesis567/fyne/storage/repository"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 type viewLayout int

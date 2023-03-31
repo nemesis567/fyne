@@ -1,5 +1,7 @@
 package app
 
+import "github.com/nemesis567/fyne"
+
 func (a *fyneApp) SetCloudProvider(p fyne.CloudProvider) {
 	if p == nil {
 		a.cloud = nil

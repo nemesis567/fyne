@@ -5,8 +5,9 @@ import (
 	"fmt"
 	"image"
 
-	"nfyne/internal/driver"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/driver"
+	"github.com/nemesis567/fyne/theme"
 )
 
 func shaderSourceNamed(name string) ([]byte, []byte) {

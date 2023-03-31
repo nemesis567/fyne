@@ -6,11 +6,12 @@ import (
 	"strconv"
 	"strings"
 
-	"nfyne/internal/cache"
-	"nfyne/internal/painter"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/internal/painter"
 
-	"nfyne/canvas"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/theme"
 )
 
 const (

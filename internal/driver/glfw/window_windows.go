@@ -5,8 +5,9 @@ import (
 	"syscall"
 	"unsafe"
 
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal"
 	"golang.org/x/sys/windows/registry"
-	"nfyne/internal"
 )
 
 func (w *window) setDarkMode() {

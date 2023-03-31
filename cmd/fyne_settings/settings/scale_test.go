@@ -3,11 +3,11 @@ package settings
 import (
 	"testing"
 
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 	"github.com/stretchr/testify/assert"
-	"nfyne/canvas"
-	"nfyne/test"
-	"nfyne/theme"
-	"nfyne/widget"
 )
 
 func TestChooseScale(t *testing.T) {

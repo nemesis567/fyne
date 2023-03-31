@@ -3,7 +3,7 @@ package binding
 import (
 	"sync"
 
-	"nfyne/internal/async"
+	"github.com/nemesis567/fyne/internal/async"
 )
 
 var (

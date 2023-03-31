@@ -4,9 +4,10 @@ import (
 	"image/color"
 	"math"
 
-	"nfyne/canvas"
-	paint "nfyne/internal/painter"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	paint "github.com/nemesis567/fyne/internal/painter"
+	"github.com/nemesis567/fyne/theme"
 )
 
 func (p *painter) createBuffer(points []float32) Buffer {

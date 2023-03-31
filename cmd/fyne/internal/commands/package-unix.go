@@ -6,7 +6,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"nfyne/cmd/fyne/internal/templates"
+	"github.com/nemesis567/fyne/cmd/fyne/internal/templates"
 
 	"golang.org/x/sys/execabs"
 )

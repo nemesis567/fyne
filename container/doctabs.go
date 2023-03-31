@@ -3,10 +3,11 @@ package container
 import (
 	"image/color"
 
-	"nfyne/canvas"
-	"nfyne/layout"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 // Declare conformity with Widget interface.

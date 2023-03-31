@@ -5,6 +5,8 @@ package theme
 
 import (
 	"image/color"
+
+	"github.com/nemesis567/fyne"
 )
 
 var (

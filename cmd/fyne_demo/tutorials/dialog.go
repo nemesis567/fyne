@@ -7,13 +7,14 @@ import (
 	"io/ioutil"
 	"log"
 
-	"nfyne/canvas"
-	"nfyne/container"
-	"nfyne/data/validation"
-	"nfyne/dialog"
-	"nfyne/storage"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/data/validation"
+	"github.com/nemesis567/fyne/dialog"
+	"github.com/nemesis567/fyne/storage"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func confirmCallback(response bool) {

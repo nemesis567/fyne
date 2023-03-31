@@ -1,6 +1,10 @@
 // Package container provides containers that are used to lay out and organise applications.
 package container
 
+import (
+	"github.com/nemesis567/fyne"
+)
+
 // New returns a new Container instance holding the specified CanvasObjects which will be laid out according to the specified Layout.
 //
 // Since: 2.0

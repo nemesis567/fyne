@@ -3,8 +3,9 @@ package widget
 import (
 	"sync"
 
-	"nfyne/canvas"
-	"nfyne/internal/cache"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/cache"
 )
 
 // Base provides a helper that handles basic widget behaviours.

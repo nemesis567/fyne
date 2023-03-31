@@ -1,7 +1,7 @@
 package storage
 
 import (
-	"nfyne/storage/repository"
+	"github.com/nemesis567/fyne/storage/repository"
 )
 
 // URIRootError is a wrapper for repository.URIRootError

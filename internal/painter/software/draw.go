@@ -5,10 +5,11 @@ import (
 	"image"
 	"math"
 
-	"nfyne/canvas"
-	"nfyne/internal"
-	"nfyne/internal/painter"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal"
+	"github.com/nemesis567/fyne/internal/painter"
+	"github.com/nemesis567/fyne/theme"
 
 	"golang.org/x/image/draw"
 )

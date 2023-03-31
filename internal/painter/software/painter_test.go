@@ -5,13 +5,14 @@ import (
 	"image/color"
 	"testing"
 
-	"nfyne/canvas"
-	"nfyne/container"
-	"nfyne/internal/painter/software"
-	internalTest "nfyne/internal/test"
-	"nfyne/test"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/internal/painter/software"
+	internalTest "github.com/nemesis567/fyne/internal/test"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func makeTestImage(w, h int) image.Image {

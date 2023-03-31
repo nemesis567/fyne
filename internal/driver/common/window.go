@@ -3,7 +3,7 @@ package common
 import (
 	"sync"
 
-	"nfyne/internal/async"
+	"github.com/nemesis567/fyne/internal/async"
 )
 
 // Window defines common functionality for windows.

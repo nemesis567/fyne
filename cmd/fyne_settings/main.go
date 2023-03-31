@@ -1,9 +1,10 @@
 package main
 
 import (
-	"nfyne/app"
-	"nfyne/cmd/fyne_settings/settings"
-	"nfyne/container"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/app"
+	"github.com/nemesis567/fyne/cmd/fyne_settings/settings"
+	"github.com/nemesis567/fyne/container"
 )
 
 func main() {

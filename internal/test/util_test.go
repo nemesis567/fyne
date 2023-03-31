@@ -11,12 +11,12 @@ import (
 
 	gotext "github.com/go-text/typesetting/font"
 	"github.com/goki/freetype/truetype"
+	"github.com/nemesis567/fyne/internal/painter"
+	"github.com/nemesis567/fyne/theme"
 	"github.com/stretchr/testify/require"
-	"nfyne/internal/painter"
-	"nfyne/theme"
 
+	"github.com/nemesis567/fyne/internal/test"
 	"github.com/stretchr/testify/assert"
-	"nfyne/internal/test"
 )
 
 func TestAssertImageMatches(t *testing.T) {

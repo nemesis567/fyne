@@ -3,7 +3,7 @@ package binding
 import (
 	"fmt"
 
-	"nfyne/storage"
+	"github.com/nemesis567/fyne/storage"
 )
 
 type sprintfString struct {

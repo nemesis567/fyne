@@ -4,11 +4,12 @@ import (
 	"image"
 	"sync"
 
-	"nfyne/internal/driver"
-	"nfyne/internal/painter"
-	"nfyne/internal/painter/software"
-	intRepo "nfyne/internal/repository"
-	"nfyne/storage/repository"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/driver"
+	"github.com/nemesis567/fyne/internal/painter"
+	"github.com/nemesis567/fyne/internal/painter/software"
+	intRepo "github.com/nemesis567/fyne/internal/repository"
+	"github.com/nemesis567/fyne/storage/repository"
 )
 
 // SoftwarePainter describes a simple type that can render canvases

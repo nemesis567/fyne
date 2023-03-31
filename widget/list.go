@@ -4,11 +4,12 @@ import (
 	"fmt"
 	"sync"
 
-	"nfyne/canvas"
-	"nfyne/data/binding"
-	"nfyne/driver/desktop"
-	"nfyne/internal/widget"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/data/binding"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // ListItemID uniquely identifies an item within a list.

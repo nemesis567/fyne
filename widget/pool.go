@@ -2,6 +2,8 @@ package widget
 
 import (
 	"sync"
+
+	"github.com/nemesis567/fyne"
 )
 
 type pool interface {

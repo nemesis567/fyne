@@ -4,9 +4,10 @@ import (
 	"image/color"
 	"testing"
 
-	"nfyne/canvas"
-	col "nfyne/internal/color"
-	"nfyne/test"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	col "github.com/nemesis567/fyne/internal/color"
+	"github.com/nemesis567/fyne/test"
 
 	"github.com/stretchr/testify/assert"
 )

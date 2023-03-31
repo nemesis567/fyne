@@ -1,7 +1,8 @@
 package container
 
 import (
-	"nfyne/internal/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/widget"
 )
 
 // Scroll defines a container that is smaller than the Content.

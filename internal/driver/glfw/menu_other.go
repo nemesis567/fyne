@@ -3,6 +3,8 @@
 
 package glfw
 
+import "github.com/nemesis567/fyne"
+
 func hasNativeMenu() bool {
 	return false
 }

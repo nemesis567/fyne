@@ -3,4 +3,6 @@
 
 package app
 
+import "github.com/nemesis567/fyne"
+
 const buildMode = fyne.BuildDebug

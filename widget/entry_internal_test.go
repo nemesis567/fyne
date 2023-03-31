@@ -5,11 +5,12 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	"nfyne/internal/cache"
-	"nfyne/test"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
 )
 
 func clickPrimary(e *Entry, ev *fyne.PointEvent) {

@@ -4,6 +4,8 @@ import (
 	"math"
 	"os"
 	"strconv"
+
+	"github.com/nemesis567/fyne"
 )
 
 const (

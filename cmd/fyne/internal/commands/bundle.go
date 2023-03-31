@@ -10,6 +10,7 @@ import (
 	"regexp"
 	"strings"
 
+	"github.com/nemesis567/fyne"
 	"github.com/urfave/cli/v2"
 )
 
@@ -248,7 +249,7 @@ func writeHeader(pkg string, out *os.File) {
 	out.WriteString(fileHeader)
 	out.WriteString("\n\npackage ")
 	out.WriteString(pkg)
-	out.WriteString("\n\nimport \"nfyne\"\n\n")
+	out.WriteString("\n\nimport \"github.com/nemesis567/fyne\"\n\n")
 }
 
 func writeResource(file, name string, f *os.File) {

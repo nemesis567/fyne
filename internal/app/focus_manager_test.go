@@ -3,10 +3,11 @@ package app_test
 import (
 	"testing"
 
-	"nfyne/container"
-	"nfyne/internal/app"
-	internalWidget "nfyne/internal/widget"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/internal/app"
+	internalWidget "github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/widget"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

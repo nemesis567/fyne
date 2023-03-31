@@ -10,14 +10,15 @@ import (
 	"runtime"
 	"time"
 
-	"nfyne/app"
-	"nfyne/canvas"
-	"nfyne/container"
-	"nfyne/internal/cache"
-	"nfyne/layout"
-	"nfyne/theme"
-	"nfyne/tools/playground"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/app"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/tools/playground"
+	"github.com/nemesis567/fyne/widget"
 )
 
 const (

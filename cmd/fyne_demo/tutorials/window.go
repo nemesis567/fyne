@@ -3,9 +3,10 @@ package tutorials
 import (
 	"time"
 
-	"nfyne/container"
-	"nfyne/driver/desktop"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func windowScreen(_ fyne.Window) fyne.CanvasObject {

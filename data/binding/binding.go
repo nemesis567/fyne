@@ -7,6 +7,8 @@ import (
 	"errors"
 	"reflect"
 	"sync"
+
+	"github.com/nemesis567/fyne"
 )
 
 var (

@@ -7,10 +7,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	"nfyne/internal/cache"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/theme"
 )
 
 func TestNewScroll(t *testing.T) {

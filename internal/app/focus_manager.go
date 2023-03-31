@@ -3,7 +3,8 @@ package app
 import (
 	"sync"
 
-	"nfyne/internal/driver"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/driver"
 )
 
 // FocusManager represents a standard manager of input focus for a canvas

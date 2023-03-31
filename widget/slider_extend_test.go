@@ -5,7 +5,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/internal/cache"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/cache"
 )
 
 type extendedSlider struct {

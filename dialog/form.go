@@ -1,10 +1,11 @@
 package dialog
 
 import (
-	"nfyne/container"
-	"nfyne/layout"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 // formDialog is a simple dialog window for displaying FormItems inside a form.

@@ -6,6 +6,7 @@ package glfw
 import (
 	"testing"
 
+	"github.com/nemesis567/fyne"
 	"github.com/stretchr/testify/assert"
 )
 

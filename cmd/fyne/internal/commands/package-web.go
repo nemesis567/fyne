@@ -5,7 +5,7 @@ import (
 	"path/filepath"
 	"runtime"
 
-	"nfyne/cmd/fyne/internal/templates"
+	"github.com/nemesis567/fyne/cmd/fyne/internal/templates"
 )
 
 func (p *Packager) packageWeb() error {

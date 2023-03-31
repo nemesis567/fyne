@@ -9,12 +9,13 @@ import (
 	"testing"
 	"time"
 
-	"nfyne/canvas"
-	"nfyne/container"
-	"nfyne/driver/mobile"
-	_ "nfyne/test"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/driver/mobile"
+	_ "github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 
 	"github.com/stretchr/testify/assert"
 )

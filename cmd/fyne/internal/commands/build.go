@@ -12,8 +12,9 @@ import (
 	version "github.com/mcuadros/go-version"
 	"github.com/urfave/cli/v2"
 
-	"nfyne/cmd/fyne/internal/metadata"
-	"nfyne/cmd/fyne/internal/templates"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/cmd/fyne/internal/metadata"
+	"github.com/nemesis567/fyne/cmd/fyne/internal/templates"
 )
 
 // Builder generate the executables.
@@ -162,12 +163,12 @@ func getFyneGoModVersion(runner runner) (string, error) {
 		return "", err
 	}
 
-	if parsed.Module.Path == "nfyne" {
+	if parsed.Module.Path == "github.com/nemesis567/fyne" {
 		return "master", nil
 	}
 
 	for _, dep := range parsed.Require {
-		if dep.Path == "nfyne" {
+		if dep.Path == "github.com/nemesis567/fyne" {
 			return dep.Version, nil
 		}
 	}

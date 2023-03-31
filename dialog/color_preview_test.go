@@ -4,8 +4,9 @@ import (
 	"image/color"
 	"testing"
 
-	"nfyne/test"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
 )
 
 func Test_colorPreview_Color(t *testing.T) {

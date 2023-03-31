@@ -3,8 +3,9 @@ package widget
 import (
 	"strings"
 
-	"nfyne/canvas"
-	"nfyne/internal/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/widget"
 )
 
 // CheckGroup widget has a list of text labels and checkbox icons next to each.

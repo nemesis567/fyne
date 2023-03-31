@@ -3,9 +3,10 @@ package widget
 import (
 	"image/color"
 
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/theme"
 )
 
 const defaultPlaceHolder string = "(Select one)"

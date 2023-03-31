@@ -3,10 +3,11 @@ package dialog
 import (
 	"path/filepath"
 
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 const (

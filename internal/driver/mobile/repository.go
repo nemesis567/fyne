@@ -1,7 +1,9 @@
 package mobile
 
 import (
-	"nfyne/storage/repository"
+	"github.com/nemesis567/fyne"
+
+	"github.com/nemesis567/fyne/storage/repository"
 )
 
 // declare conformance with repository types

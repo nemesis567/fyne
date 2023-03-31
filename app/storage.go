@@ -3,8 +3,9 @@ package app
 import (
 	"os"
 
-	"nfyne/internal"
-	"nfyne/storage"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal"
+	"github.com/nemesis567/fyne/storage"
 )
 
 type store struct {

@@ -2,6 +2,8 @@ package theme
 
 import (
 	"image/color"
+
+	"github.com/nemesis567/fyne"
 )
 
 // FromLegacy returns a 2.0 Theme created from the given LegacyTheme data.

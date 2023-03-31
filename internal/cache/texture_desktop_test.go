@@ -7,7 +7,7 @@ import (
 	"sync"
 	"testing"
 
-	"nfyne/internal/cache"
+	"github.com/nemesis567/fyne/internal/cache"
 )
 
 // go test -race

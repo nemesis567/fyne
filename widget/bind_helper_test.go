@@ -3,8 +3,8 @@ package widget
 import (
 	"testing"
 
+	"github.com/nemesis567/fyne/data/binding"
 	"github.com/stretchr/testify/assert"
-	"nfyne/data/binding"
 )
 
 func TestBasicBinder(t *testing.T) {

@@ -3,9 +3,10 @@ package widget
 import (
 	"testing"
 
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/test"
 	"github.com/stretchr/testify/assert"
-	"nfyne/internal/cache"
-	"nfyne/test"
 )
 
 func TestSelect_SetOptions(t *testing.T) {

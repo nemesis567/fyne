@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
+	"github.com/nemesis567/fyne/test"
 	"github.com/stretchr/testify/assert"
-	"nfyne/test"
 )
 
 func TestBindPreference_DataRace(t *testing.T) {

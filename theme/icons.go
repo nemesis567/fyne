@@ -1,7 +1,8 @@
 package theme
 
 import (
-	"nfyne/internal/svg"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/svg"
 )
 
 const (

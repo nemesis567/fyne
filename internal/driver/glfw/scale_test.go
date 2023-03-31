@@ -7,7 +7,8 @@ import (
 	"os"
 	"testing"
 
-	_ "nfyne/test"
+	"github.com/nemesis567/fyne"
+	_ "github.com/nemesis567/fyne/test"
 
 	"github.com/stretchr/testify/assert"
 )

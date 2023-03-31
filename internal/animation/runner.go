@@ -3,6 +3,8 @@ package animation
 import (
 	"sync"
 	"time"
+
+	"github.com/nemesis567/fyne"
 )
 
 // Runner is the main driver for animations package

@@ -1,9 +1,10 @@
 package widget
 
 import (
-	"nfyne/canvas"
-	"nfyne/internal/widget"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // PopUp is a widget that can float above the user interface.

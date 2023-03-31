@@ -5,10 +5,11 @@ import (
 	"image/color"
 	"testing"
 
-	"nfyne/driver/desktop"
-	"nfyne/internal/cache"
-	"nfyne/test"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/theme"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

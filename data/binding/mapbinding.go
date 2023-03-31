@@ -3,6 +3,8 @@ package binding
 import (
 	"errors"
 	"reflect"
+
+	"github.com/nemesis567/fyne"
 )
 
 // DataMap is the base interface for all bindable data maps.

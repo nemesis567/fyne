@@ -10,10 +10,10 @@ import (
 	"strings"
 	"testing"
 
-	"nfyne/canvas"
-	intRepo "nfyne/internal/repository"
-	"nfyne/storage"
-	"nfyne/storage/repository"
+	"github.com/nemesis567/fyne/canvas"
+	intRepo "github.com/nemesis567/fyne/internal/repository"
+	"github.com/nemesis567/fyne/storage"
+	"github.com/nemesis567/fyne/storage/repository"
 
 	"github.com/stretchr/testify/assert"
 )

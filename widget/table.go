@@ -1,10 +1,11 @@
 package widget
 
 import (
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	"nfyne/internal/widget"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // Declare conformity with Widget interface.

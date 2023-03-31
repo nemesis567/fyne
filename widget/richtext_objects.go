@@ -5,9 +5,10 @@ import (
 	"net/url"
 	"strconv"
 
-	"nfyne/canvas"
-	"nfyne/internal"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal"
+	"github.com/nemesis567/fyne/theme"
 )
 
 var (

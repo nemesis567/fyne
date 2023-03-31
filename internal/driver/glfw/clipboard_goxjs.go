@@ -5,6 +5,7 @@ package glfw
 
 import (
 	glfw "github.com/fyne-io/glfw-js"
+	"github.com/nemesis567/fyne"
 )
 
 // Declare conformity with Clipboard interface

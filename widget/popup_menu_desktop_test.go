@@ -9,7 +9,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/test"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/test"
 )
 
 func TestPopUpMenu_KeyboardControl(t *testing.T) {

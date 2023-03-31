@@ -3,8 +3,9 @@ package widget
 import (
 	"testing"
 
-	"nfyne"
-	"nfyne/test"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/test"
+	"github.com/stretchr/testify/assert"
 )
 
 type extendedProgressBar struct {

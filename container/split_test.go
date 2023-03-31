@@ -4,9 +4,10 @@ import (
 	"image/color"
 	"testing"
 
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
 	"github.com/stretchr/testify/assert"
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
 )
 
 func TestSplitContainer_MinSize(t *testing.T) {

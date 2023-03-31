@@ -3,12 +3,13 @@ package widget
 import (
 	"image/color"
 
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	col "nfyne/internal/color"
-	"nfyne/internal/widget"
-	"nfyne/layout"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	col "github.com/nemesis567/fyne/internal/color"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // ButtonAlign represents the horizontal alignment of a button.

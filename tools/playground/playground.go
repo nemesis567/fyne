@@ -8,8 +8,9 @@ import (
 	"image"
 	"image/png"
 
-	"nfyne/driver/software"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/driver/software"
+	"github.com/nemesis567/fyne/theme"
 )
 
 func imageToPlayground(img image.Image) {

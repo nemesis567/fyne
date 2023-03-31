@@ -5,9 +5,10 @@ import (
 	"sync"
 	"time"
 
-	"nfyne/canvas"
-	col "nfyne/internal/color"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	col "github.com/nemesis567/fyne/internal/color"
+	"github.com/nemesis567/fyne/theme"
 )
 
 const cursorInterruptTime = 300 * time.Millisecond

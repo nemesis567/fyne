@@ -6,12 +6,13 @@ import (
 	"math"
 	"time"
 
-	"nfyne/driver/mobile"
-	"nfyne/internal/app"
-	"nfyne/internal/driver"
-	"nfyne/internal/driver/common"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/driver/mobile"
+	"github.com/nemesis567/fyne/internal/app"
+	"github.com/nemesis567/fyne/internal/driver"
+	"github.com/nemesis567/fyne/internal/driver/common"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 const (

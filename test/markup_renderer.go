@@ -8,11 +8,12 @@ import (
 	"strings"
 	"unsafe"
 
-	"nfyne/canvas"
-	col "nfyne/internal/color"
-	"nfyne/internal/driver"
-	"nfyne/layout"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	col "github.com/nemesis567/fyne/internal/color"
+	"github.com/nemesis567/fyne/internal/driver"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/theme"
 )
 
 type markupRenderer struct {

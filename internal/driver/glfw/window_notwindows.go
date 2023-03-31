@@ -4,7 +4,8 @@
 package glfw
 
 import (
-	"nfyne/internal"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal"
 )
 
 func (w *window) setDarkMode() {

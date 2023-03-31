@@ -3,7 +3,8 @@ package cache
 import (
 	"testing"
 
-	"nfyne"
+	"github.com/nemesis567/fyne"
+	"github.com/stretchr/testify/assert"
 )
 
 func TestTextCacheGet(t *testing.T) {

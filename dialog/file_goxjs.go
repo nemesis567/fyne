@@ -3,6 +3,10 @@
 
 package dialog
 
+import (
+	"github.com/nemesis567/fyne"
+)
+
 func (f *fileDialog) loadPlaces() []fyne.CanvasObject {
 	return nil
 }

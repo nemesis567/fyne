@@ -1,11 +1,12 @@
 package glfw
 
 import (
-	"nfyne/canvas"
-	"nfyne/container"
-	"nfyne/driver/desktop"
-	"nfyne/internal/widget"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/theme"
 )
 
 var _ fyne.Widget = (*MenuBar)(nil)

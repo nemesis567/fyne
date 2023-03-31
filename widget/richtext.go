@@ -7,11 +7,12 @@ import (
 	"sync"
 	"unicode"
 
-	"nfyne/canvas"
-	"nfyne/internal/cache"
-	"nfyne/internal/widget"
-	"nfyne/layout"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/theme"
 )
 
 const (

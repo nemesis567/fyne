@@ -1,10 +1,11 @@
 package widget
 
 import (
-	"nfyne/canvas"
-	"nfyne/internal/widget"
-	"nfyne/layout"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/theme"
 )
 
 var _ fyne.Widget = (*Menu)(nil)

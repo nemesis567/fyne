@@ -2,6 +2,8 @@ package storage
 
 import (
 	"io/ioutil"
+
+	"github.com/nemesis567/fyne"
 )
 
 // LoadResourceFromURI creates a new StaticResource in memory using the contents of the specified URI.

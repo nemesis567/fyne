@@ -1,5 +1,9 @@
 package test
 
+import (
+	"github.com/nemesis567/fyne"
+)
+
 type testWindow struct {
 	title              string
 	fullScreen         bool

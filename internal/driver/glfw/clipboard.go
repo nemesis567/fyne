@@ -7,6 +7,8 @@ import (
 	"runtime"
 	"time"
 
+	"github.com/nemesis567/fyne"
+
 	"github.com/go-gl/glfw/v3.3/glfw"
 )
 

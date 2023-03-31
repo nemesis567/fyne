@@ -5,11 +5,12 @@ import (
 	"image/draw"
 	"sync"
 
-	"nfyne/driver/desktop"
-	"nfyne/internal"
-	"nfyne/internal/app"
-	"nfyne/internal/cache"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal"
+	"github.com/nemesis567/fyne/internal/app"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/theme"
 )
 
 var (

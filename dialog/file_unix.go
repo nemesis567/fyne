@@ -6,8 +6,9 @@ package dialog
 import (
 	"path/filepath"
 
-	"nfyne/storage"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/storage"
+	"github.com/nemesis567/fyne/theme"
 )
 
 func (f *fileDialog) getPlaces() []favoriteItem {

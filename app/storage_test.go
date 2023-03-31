@@ -5,7 +5,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/internal"
+	"github.com/nemesis567/fyne/internal"
 )
 
 func TestStore_RootURI(t *testing.T) {

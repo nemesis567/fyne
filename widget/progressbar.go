@@ -4,12 +4,13 @@ import (
 	"image/color"
 	"strconv"
 
-	"nfyne/canvas"
-	"nfyne/data/binding"
-	"nfyne/internal/cache"
-	col "nfyne/internal/color"
-	"nfyne/internal/widget"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/data/binding"
+	"github.com/nemesis567/fyne/internal/cache"
+	col "github.com/nemesis567/fyne/internal/color"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/theme"
 )
 
 type progressRenderer struct {

@@ -13,10 +13,11 @@ import (
 
 	"golang.org/x/image/draw"
 
-	"nfyne/canvas"
-	"nfyne/internal"
-	"nfyne/internal/cache"
-	"nfyne/internal/svg"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/internal/svg"
 )
 
 var aspects = make(map[interface{}]float32, 16)

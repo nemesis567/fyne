@@ -5,10 +5,11 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/internal"
-	"nfyne/internal/app"
-	"nfyne/test"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal"
+	"github.com/nemesis567/fyne/internal/app"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func TestOverlayStack(t *testing.T) {

@@ -1,8 +1,9 @@
 package layout
 
 import (
-	"nfyne/canvas"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/theme"
 )
 
 const formLayoutCols = 2

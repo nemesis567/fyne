@@ -1,5 +1,7 @@
 package widget
 
+import "github.com/nemesis567/fyne"
+
 var _ fyne.WidgetRenderer = (*SimpleRenderer)(nil)
 
 // SimpleRenderer is a basic renderer that satisfies widget.Renderer interface by wrapping

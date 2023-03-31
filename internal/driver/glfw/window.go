@@ -7,12 +7,13 @@ import (
 	"runtime"
 	"time"
 
-	"nfyne/driver/desktop"
-	"nfyne/internal"
-	"nfyne/internal/app"
-	"nfyne/internal/cache"
-	"nfyne/internal/driver"
-	"nfyne/internal/driver/common"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal"
+	"github.com/nemesis567/fyne/internal/app"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/internal/driver"
+	"github.com/nemesis567/fyne/internal/driver/common"
 )
 
 const (

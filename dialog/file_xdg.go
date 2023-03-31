@@ -10,7 +10,8 @@ import (
 	"fmt"
 	"os"
 
-	"nfyne/storage"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/storage"
 
 	"golang.org/x/sys/execabs"
 )

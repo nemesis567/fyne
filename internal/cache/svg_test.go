@@ -5,8 +5,9 @@ import (
 	"sync"
 	"testing"
 
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
 	"github.com/stretchr/testify/assert"
-	"nfyne/canvas"
 )
 
 func syncMapLen(m *sync.Map) (n int) {

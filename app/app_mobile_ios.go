@@ -18,6 +18,8 @@ import (
 	"net/url"
 	"path/filepath"
 	"unsafe"
+
+	"github.com/nemesis567/fyne"
 )
 
 func rootConfigDir() string {

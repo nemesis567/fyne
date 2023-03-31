@@ -11,6 +11,8 @@ import (
 
 	"github.com/fyne-io/image/ico"
 	"github.com/josephspurrier/goversioninfo"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/cmd/fyne/internal/templates"
 	"golang.org/x/sys/execabs"
 	"nfyne/cmd/fyne/internal/templates"
 )

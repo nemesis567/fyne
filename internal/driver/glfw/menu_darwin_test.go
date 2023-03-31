@@ -7,8 +7,10 @@ import (
 	"testing"
 	"unsafe"
 
+	"github.com/nemesis567/fyne/driver/desktop"
 	"github.com/stretchr/testify/assert"
-	"nfyne/driver/desktop"
+
+	"github.com/nemesis567/fyne"
 )
 
 func TestDarwinMenu(t *testing.T) {

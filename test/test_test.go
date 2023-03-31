@@ -9,10 +9,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"nfyne/canvas"
-	"nfyne/container"
-	"nfyne/test"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func TestAssertCanvasTappableAt(t *testing.T) {

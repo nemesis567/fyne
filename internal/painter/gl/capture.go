@@ -3,6 +3,8 @@ package gl
 import (
 	"image"
 	"image/color"
+
+	"github.com/nemesis567/fyne"
 )
 
 type captureImage struct {

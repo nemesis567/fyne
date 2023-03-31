@@ -7,8 +7,8 @@ import (
 	"sync"
 	"testing"
 
-	"nfyne/internal/cache"
-	"nfyne/internal/driver/mobile/gl"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/internal/driver/mobile/gl"
 )
 
 // go test -race

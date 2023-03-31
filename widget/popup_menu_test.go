@@ -6,9 +6,10 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/canvas"
-	"nfyne/test"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func TestPopUpMenu_Move(t *testing.T) {

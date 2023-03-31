@@ -5,10 +5,11 @@ import (
 	"image/color"
 	"strconv"
 
-	"nfyne/canvas"
-	"nfyne/container"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 // containerScreen loads a tab panel for containers

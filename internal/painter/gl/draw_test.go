@@ -8,7 +8,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/canvas"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
 )
 
 func TestInnerRect_Stretch(t *testing.T) {

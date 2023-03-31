@@ -3,10 +3,10 @@ package container
 import (
 	"testing"
 
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/theme"
 	"github.com/stretchr/testify/assert"
-	"nfyne/canvas"
-	"nfyne/internal/cache"
-	"nfyne/theme"
 )
 
 func TestTabButton_Icon_Change(t *testing.T) {

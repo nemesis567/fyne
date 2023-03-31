@@ -8,8 +8,9 @@ import (
 	"path/filepath"
 	"strconv"
 
-	"nfyne/cmd/fyne/internal/mobile"
-	"nfyne/cmd/fyne/internal/templates"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/cmd/fyne/internal/mobile"
+	"github.com/nemesis567/fyne/cmd/fyne/internal/templates"
 
 	"golang.org/x/sys/execabs"
 )

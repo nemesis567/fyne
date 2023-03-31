@@ -6,13 +6,14 @@ import (
 	"log"
 	"net/url"
 
-	"nfyne/app"
-	"nfyne/cmd/fyne_demo/tutorials"
-	"nfyne/cmd/fyne_settings/settings"
-	"nfyne/container"
-	"nfyne/driver/desktop"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/app"
+	"github.com/nemesis567/fyne/cmd/fyne_demo/tutorials"
+	"github.com/nemesis567/fyne/cmd/fyne_settings/settings"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 const preferenceCurrentTutorial = "currentTutorial"

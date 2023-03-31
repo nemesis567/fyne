@@ -1,5 +1,7 @@
 package layout
 
+import "github.com/nemesis567/fyne"
+
 // SpacerObject is any object that can be used to space out child objects
 type SpacerObject interface {
 	ExpandVertical() bool

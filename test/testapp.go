@@ -1,15 +1,16 @@
 // Package test provides utility drivers for running UI tests without rendering to a screen.
-package test // import "nfyne/test"
+package test // import "github.com/nemesis567/fyne/test"
 
 import (
 	"net/url"
 	"sync"
 
-	"nfyne/internal"
-	"nfyne/internal/app"
-	"nfyne/internal/cache"
-	"nfyne/internal/painter"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal"
+	"github.com/nemesis567/fyne/internal/app"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/internal/painter"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // ensure we have a dummy app loaded and ready to test

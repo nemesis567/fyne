@@ -7,6 +7,8 @@ import (
 	"testing"
 
 	"github.com/go-gl/glfw/v3.3/glfw"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/driver/desktop"
 	"github.com/stretchr/testify/assert"
 	"nfyne/driver/desktop"
 )

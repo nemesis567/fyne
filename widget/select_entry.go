@@ -1,7 +1,8 @@
 package widget
 
 import (
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // SelectEntry is an input field which supports selecting from a fixed set of options.

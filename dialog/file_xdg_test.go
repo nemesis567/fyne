@@ -8,8 +8,8 @@ import (
 	"os"
 	"testing"
 
+	"github.com/nemesis567/fyne/storage"
 	"github.com/stretchr/testify/assert"
-	"nfyne/storage"
 )
 
 func TestFavoriteLocations(t *testing.T) {

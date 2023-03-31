@@ -2,6 +2,8 @@ package glfw
 
 import (
 	"runtime"
+
+	"github.com/nemesis567/fyne"
 )
 
 type glDevice struct {

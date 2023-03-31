@@ -4,8 +4,9 @@ import (
 	"image/color"
 	"testing"
 
-	intRepo "nfyne/internal/repository"
-	"nfyne/storage/repository"
+	"github.com/nemesis567/fyne"
+	intRepo "github.com/nemesis567/fyne/internal/repository"
+	"github.com/nemesis567/fyne/storage/repository"
 
 	"github.com/stretchr/testify/assert"
 )

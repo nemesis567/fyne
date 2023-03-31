@@ -1,7 +1,8 @@
 package dialog
 
 import (
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/widget"
 )
 
 // EntryDialog is a variation of a dialog which prompts the user to enter some text.

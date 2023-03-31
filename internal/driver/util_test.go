@@ -4,12 +4,13 @@ import (
 	"image/color"
 	"testing"
 
-	"nfyne/canvas"
-	"nfyne/container"
-	"nfyne/internal/driver"
-	internal_widget "nfyne/internal/widget"
-	_ "nfyne/test"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/internal/driver"
+	internal_widget "github.com/nemesis567/fyne/internal/widget"
+	_ "github.com/nemesis567/fyne/test"
+	"github.com/nemesis567/fyne/widget"
 
 	"github.com/stretchr/testify/assert"
 )

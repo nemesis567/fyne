@@ -1,5 +1,7 @@
 package mobile
 
+import "github.com/nemesis567/fyne"
+
 // TouchEvent contains data relating to mobile touch events
 type TouchEvent struct {
 	fyne.PointEvent

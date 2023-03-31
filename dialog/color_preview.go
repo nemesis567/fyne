@@ -3,9 +3,10 @@ package dialog
 import (
 	"image/color"
 
-	"nfyne/canvas"
-	internalwidget "nfyne/internal/widget"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	internalwidget "github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/widget"
 )
 
 // colorPreview displays a 2 part rectangle showing the current and previous selected colours

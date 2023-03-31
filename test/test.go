@@ -10,11 +10,12 @@ import (
 	"testing"
 	"time"
 
-	"nfyne/driver/desktop"
-	"nfyne/internal/cache"
-	"nfyne/internal/driver"
-	"nfyne/internal/painter/software"
-	"nfyne/internal/test"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/internal/driver"
+	"github.com/nemesis567/fyne/internal/painter/software"
+	"github.com/nemesis567/fyne/internal/test"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

@@ -3,11 +3,12 @@ package container
 import (
 	"sync"
 
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	"nfyne/internal"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 // TabItem represents a single view in a tab view.

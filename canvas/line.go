@@ -3,6 +3,8 @@ package canvas
 import (
 	"image/color"
 	"math"
+
+	"github.com/nemesis567/fyne"
 )
 
 // Declare conformity with CanvasObject interface

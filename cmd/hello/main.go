@@ -2,9 +2,9 @@
 package main
 
 import (
-	"nfyne/app"
-	"nfyne/container"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne/app"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/widget"
 )
 
 func main() {

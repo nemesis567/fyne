@@ -1,5 +1,7 @@
 package canvas
 
+import "github.com/nemesis567/fyne"
+
 // Refresh instructs the containing canvas to refresh the specified obj.
 func Refresh(obj fyne.CanvasObject) {
 	if fyne.CurrentApp() == nil || fyne.CurrentApp().Driver() == nil {

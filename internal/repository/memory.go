@@ -1,8 +1,9 @@
 package repository
 
 import (
-	"nfyne/storage"
-	"nfyne/storage/repository"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/storage"
+	"github.com/nemesis567/fyne/storage/repository"
 
 	"fmt"
 	"io"

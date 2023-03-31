@@ -4,10 +4,11 @@ import (
 	"fmt"
 	"math"
 
-	"nfyne/canvas"
-	"nfyne/data/binding"
-	"nfyne/internal/widget"
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/data/binding"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/theme"
 )
 
 // Orientation controls the horizontal/vertical layout of a widget

@@ -3,9 +3,10 @@ package software
 import (
 	"image"
 
-	"nfyne/canvas"
-	"nfyne/internal"
-	"nfyne/internal/driver"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/internal"
+	"github.com/nemesis567/fyne/internal/driver"
 )
 
 // Painter is a simple software painter that can paint a canvas in memory.

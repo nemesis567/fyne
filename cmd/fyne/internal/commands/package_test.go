@@ -8,7 +8,7 @@ import (
 	"github.com/josephspurrier/goversioninfo"
 	"github.com/stretchr/testify/assert"
 
-	"nfyne/cmd/fyne/internal/metadata"
+	"github.com/nemesis567/fyne/cmd/fyne/internal/metadata"
 )
 
 func Test_calculateExeName(t *testing.T) {
@@ -133,7 +133,7 @@ func Test_buildPackageWasm(t *testing.T) {
 		{
 			expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 			mockReturn: mockReturn{
-				ret: []byte("{ \"Module\": { \"Path\": \"nfyne\"} }"),
+				ret: []byte("{ \"Module\": { \"Path\": \"github.com/nemesis567/fyne\"} }"),
 			},
 		},
 		{
@@ -173,7 +173,7 @@ func Test_PackageWasm(t *testing.T) {
 		{
 			expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 			mockReturn: mockReturn{
-				ret: []byte("{ \"Module\": { \"Path\": \"nfyne\"} }"),
+				ret: []byte("{ \"Module\": { \"Path\": \"github.com/nemesis567/fyne\"} }"),
 			},
 		},
 		{
@@ -274,7 +274,7 @@ func Test_buildPackageGopherJS(t *testing.T) {
 		{
 			expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 			mockReturn: mockReturn{
-				ret: []byte("{ \"Module\": { \"Path\": \"nfyne\"} }"),
+				ret: []byte("{ \"Module\": { \"Path\": \"github.com/nemesis567/fyne\"} }"),
 			},
 		},
 		{
@@ -335,7 +335,7 @@ func Test_PackageGopherJS(t *testing.T) {
 		{
 			expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 			mockReturn: mockReturn{
-				ret: []byte("{ \"Module\": { \"Path\": \"nfyne\"} }"),
+				ret: []byte("{ \"Module\": { \"Path\": \"github.com/nemesis567/fyne\"} }"),
 			},
 		},
 		{
@@ -436,7 +436,7 @@ func Test_BuildPackageWeb(t *testing.T) {
 		{
 			expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 			mockReturn: mockReturn{
-				ret: []byte("{ \"Module\": { \"Path\": \"nfyne\"} }"),
+				ret: []byte("{ \"Module\": { \"Path\": \"github.com/nemesis567/fyne\"} }"),
 			},
 		},
 		{
@@ -459,7 +459,7 @@ func Test_BuildPackageWeb(t *testing.T) {
 		{
 			expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 			mockReturn: mockReturn{
-				ret: []byte("{ \"Module\": { \"Path\": \"nfyne\"} }"),
+				ret: []byte("{ \"Module\": { \"Path\": \"github.com/nemesis567/fyne\"} }"),
 			},
 		},
 		{
@@ -522,7 +522,7 @@ func Test_PackageWeb(t *testing.T) {
 		{
 			expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 			mockReturn: mockReturn{
-				ret: []byte("{ \"Module\": { \"Path\": \"nfyne\"} }"),
+				ret: []byte("{ \"Module\": { \"Path\": \"github.com/nemesis567/fyne\"} }"),
 			},
 		},
 		{
@@ -549,7 +549,7 @@ func Test_PackageWeb(t *testing.T) {
 			{
 				expectedValue: expectedValue{args: []string{"mod", "edit", "-json"}},
 				mockReturn: mockReturn{
-					ret: []byte("{ \"Module\": { \"Path\": \"nfyne\"} }"),
+					ret: []byte("{ \"Module\": { \"Path\": \"github.com/nemesis567/fyne\"} }"),
 				},
 			},
 			{

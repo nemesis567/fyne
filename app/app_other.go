@@ -9,7 +9,8 @@ import (
 	"os"
 	"path/filepath"
 
-	"nfyne/theme"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/theme"
 )
 
 func defaultVariant() fyne.ThemeVariant {

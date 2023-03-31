@@ -7,7 +7,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	_ "nfyne/test"
+	"github.com/nemesis567/fyne"
+	_ "github.com/nemesis567/fyne/test"
 
 	"golang.org/x/sys/execabs"
 )

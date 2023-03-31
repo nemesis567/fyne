@@ -6,13 +6,14 @@ import (
 	"net/url"
 	"time"
 
-	"nfyne/canvas"
-	"nfyne/container"
-	"nfyne/data/validation"
-	"nfyne/driver/mobile"
-	"nfyne/layout"
-	"nfyne/theme"
-	"nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/container"
+	"github.com/nemesis567/fyne/data/validation"
+	"github.com/nemesis567/fyne/driver/mobile"
+	"github.com/nemesis567/fyne/layout"
+	"github.com/nemesis567/fyne/theme"
+	"github.com/nemesis567/fyne/widget"
 )
 
 const (

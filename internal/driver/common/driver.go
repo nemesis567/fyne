@@ -1,7 +1,8 @@
 package common
 
 import (
-	"nfyne/internal/cache"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal/cache"
 )
 
 // CanvasForObject returns the canvas for the specified object.

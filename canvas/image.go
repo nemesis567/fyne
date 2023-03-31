@@ -6,7 +6,8 @@ import (
 	"io/ioutil"
 	"path/filepath"
 
-	"nfyne/storage"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/storage"
 )
 
 // ImageFill defines the different type of ways an image can stretch to fill its space.

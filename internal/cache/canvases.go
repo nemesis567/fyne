@@ -2,6 +2,8 @@ package cache
 
 import (
 	"sync"
+
+	"github.com/nemesis567/fyne"
 )
 
 var canvasesLock sync.RWMutex

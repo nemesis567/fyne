@@ -20,7 +20,9 @@ import (
 	"golang.org/x/mod/modfile"
 	"golang.org/x/mod/module"
 
-	"nfyne/cmd/fyne/internal/metadata"
+	"github.com/nemesis567/fyne"
+
+	"github.com/nemesis567/fyne/cmd/fyne/internal/metadata"
 )
 
 const (

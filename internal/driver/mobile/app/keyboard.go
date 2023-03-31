@@ -1,7 +1,7 @@
 package app
 
 import "C"
-import "nfyne/internal/driver/mobile/event/key"
+import "github.com/nemesis567/fyne/internal/driver/mobile/event/key"
 
 // KeyboardType represents the type of a keyboard
 type KeyboardType int32

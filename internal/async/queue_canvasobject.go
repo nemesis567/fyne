@@ -6,7 +6,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"nfyne"
+	"github.com/nemesis567/fyne"
 )
 
 var itemCanvasObjectPool = sync.Pool{

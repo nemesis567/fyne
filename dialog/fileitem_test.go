@@ -4,10 +4,10 @@ import (
 	"path/filepath"
 	"testing"
 
-	"nfyne/storage"
+	"github.com/nemesis567/fyne/storage"
 
+	"github.com/nemesis567/fyne/test"
 	"github.com/stretchr/testify/assert"
-	"nfyne/test"
 )
 
 func TestFileItem_Name(t *testing.T) {

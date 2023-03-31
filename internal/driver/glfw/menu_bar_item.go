@@ -1,11 +1,12 @@
 package glfw
 
 import (
-	"nfyne/canvas"
-	"nfyne/driver/desktop"
-	"nfyne/internal/widget"
-	"nfyne/theme"
-	publicWidget "nfyne/widget"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/canvas"
+	"github.com/nemesis567/fyne/driver/desktop"
+	"github.com/nemesis567/fyne/internal/widget"
+	"github.com/nemesis567/fyne/theme"
+	publicWidget "github.com/nemesis567/fyne/widget"
 )
 
 var _ desktop.Hoverable = (*menuBarItem)(nil)

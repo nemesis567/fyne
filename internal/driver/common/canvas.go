@@ -4,12 +4,13 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"nfyne/internal"
-	"nfyne/internal/app"
-	"nfyne/internal/async"
-	"nfyne/internal/cache"
-	"nfyne/internal/driver"
-	"nfyne/internal/painter/gl"
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/internal"
+	"github.com/nemesis567/fyne/internal/app"
+	"github.com/nemesis567/fyne/internal/async"
+	"github.com/nemesis567/fyne/internal/cache"
+	"github.com/nemesis567/fyne/internal/driver"
+	"github.com/nemesis567/fyne/internal/painter/gl"
 )
 
 // SizeableCanvas defines a canvas with size related functions.

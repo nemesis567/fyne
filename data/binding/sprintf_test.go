@@ -4,8 +4,9 @@ import (
 	"fmt"
 	"testing"
 
+	"github.com/nemesis567/fyne"
+	"github.com/nemesis567/fyne/storage"
 	"github.com/stretchr/testify/assert"
-	"nfyne/storage"
 )
 
 func TestSprintfConversionRead(t *testing.T) {

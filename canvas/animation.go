@@ -3,6 +3,8 @@ package canvas
 import (
 	"image/color"
 	"time"
+
+	"github.com/nemesis567/fyne"
 )
 
 const (
