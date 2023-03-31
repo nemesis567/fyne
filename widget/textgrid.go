@@ -66,8 +66,8 @@ func (c *CustomTextGridStyle) BackgroundColor() color.Color {
 // This is designed to be used by a text editor, code preview or terminal emulator.
 type TextGrid struct {
 	BaseWidget
-	Rows []TextGridRow
-
+	Rows            []TextGridRow
+	LineDrawMutator func(int, int, TextGridStyle) (string, int, TextGridStyle, TextGridStyle, rune)
 	ShowLineNumbers bool
 	ShowWhitespace  bool
 	TabWidth        int // If set to 0 the fyne.DefaultTabWidth is used
@@ -314,6 +314,11 @@ func (t *TextGrid) refreshCell(row, col int) {
 func NewTextGrid() *TextGrid {
 	grid := &TextGrid{}
 	grid.ExtendBaseWidget(grid)
+	grid.LineDrawMutator = func(i int, rows int, style TextGridStyle) (string, int, TextGridStyle, TextGridStyle, rune) {
+		lineStr := strconv.Itoa(i)
+		pad := len(strconv.Itoa(rows+1)) - len(lineStr)
+		return lineStr, pad, TextGridStyleDefault, style, '|'
+	}
 	return grid
 }
 
@@ -402,19 +407,19 @@ func (t *textGridRenderer) refreshGrid() {
 		rowStyle := row.Style
 		i := 0
 		if t.text.ShowLineNumbers {
-			lineStr := []rune(strconv.Itoa(line))
-			pad := t.lineNumberWidth() - len(lineStr)
+			resultStr, pad, style, rStyle, finalChar := t.text.LineDrawMutator(line, t.rows, rowStyle)
+			lineStr := []rune(resultStr)
 			for ; i < pad; i++ {
-				t.setCellRune(' ', x, TextGridStyleWhitespace, rowStyle) // padding space
+				t.setCellRune(' ', x, TextGridStyleWhitespace, rStyle) // padding space
 				x++
 			}
 			for c := 0; c < len(lineStr); c++ {
-				t.setCellRune(lineStr[c], x, TextGridStyleDefault, rowStyle) // line numbers
+				t.setCellRune(lineStr[c], x, style, rStyle) // line numbers
 				i++
 				x++
 			}
 
-			t.setCellRune('|', x, TextGridStyleWhitespace, rowStyle) // last space
+			t.setCellRune(finalChar, x, TextGridStyleWhitespace, rStyle) // last space
 			i++
 			x++
 		}
