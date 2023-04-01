@@ -1053,6 +1053,10 @@ func (e *Entry) textPosFromRowCol(row, col int) int {
 	return b.begin + col
 }
 
+func (e *Entry) GetMinCharSize() fyne.Size {
+	return e.text.charMinSize(e.Password, e.TextStyle)
+}
+
 func (e *Entry) syncSegments() {
 	colName := theme.ColorNameForeground
 	wrap := e.textWrap()
