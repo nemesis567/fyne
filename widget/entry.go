@@ -3,6 +3,7 @@ package widget
 import (
 	"image/color"
 	"math"
+	"strconv"
 	"strings"
 	"unicode"
 
@@ -43,10 +44,11 @@ type Entry struct {
 	PlaceHolder string
 	OnChanged   func(string) `json:"-"`
 	// Since: 2.0
-	OnSubmitted func(string) `json:"-"`
-	Password    bool
-	MultiLine   bool
-	Wrapping    fyne.TextWrap
+	OnSubmitted    func(string) `json:"-"`
+	Password       bool
+	MultiLine      bool
+	ShowLineNumber bool
+	Wrapping       fyne.TextWrap
 
 	// Set a validator that this entry will check against
 	// Since: 1.4
@@ -63,6 +65,7 @@ type Entry struct {
 	dirty       bool
 	focused     bool
 	text        *RichText
+	lineTable   *RichText
 	placeholder *RichText
 	content     *entryContent
 	scroll      *widget.Scroll
@@ -89,6 +92,7 @@ type Entry struct {
 	binder          basicBinder
 	conversionError error
 	multiLineRows   int // override global default number of visible lines
+	RowCount        int
 }
 
 // NewEntry creates a new single line entry widget.
@@ -160,9 +164,13 @@ func (e *Entry) CreateRenderer() fyne.WidgetRenderer {
 	// initialise
 	e.textProvider()
 	e.placeholderProvider()
+	if e.ShowLineNumber {
+		e.lineTableProvider()
+	}
 
 	box := canvas.NewRectangle(theme.InputBackgroundColor())
 	border := canvas.NewRectangle(color.Transparent)
+	lineBox := canvas.NewRectangle(theme.DisabledColor())
 	border.StrokeWidth = theme.InputBorderSize()
 	border.StrokeColor = theme.InputBorderColor()
 	cursor := canvas.NewRectangle(color.Transparent)
@@ -172,6 +180,9 @@ func (e *Entry) CreateRenderer() fyne.WidgetRenderer {
 	e.content = &entryContent{entry: e}
 	e.scroll = widget.NewScroll(nil)
 	objects := []fyne.CanvasObject{box, border}
+	if e.ShowLineNumber {
+		objects = append([]fyne.CanvasObject{lineBox, e.lineTableProvider()}, objects...)
+	}
 	if e.Wrapping != fyne.TextWrapOff {
 		e.scroll.Content = e.content
 		objects = append(objects, e.scroll)
@@ -191,7 +202,7 @@ func (e *Entry) CreateRenderer() fyne.WidgetRenderer {
 		objects = append(objects, e.ActionItem)
 	}
 
-	return &entryRenderer{box, border, e.scroll, objects, e}
+	return &entryRenderer{box, border, lineBox, e.scroll, objects, e}
 }
 
 // Cursor returns the cursor type of this widget
@@ -600,6 +611,7 @@ func (e *Entry) TypedKey(key *fyne.KeyEvent) {
 
 		e.propertyLock.Lock()
 		provider.deleteFromTo(pos, pos+1)
+		e.updateLineCounts()
 		e.propertyLock.Unlock()
 	case fyne.KeyReturn, fyne.KeyEnter:
 		e.typedKeyReturn(provider, multiLine)
@@ -744,11 +756,33 @@ func (e *Entry) TypedRune(r rune) {
 	runes := []rune{r}
 	pos := e.cursorTextPos()
 	provider.insertAt(pos, string(runes))
+	e.updateLineCounts()
 	e.CursorRow, e.CursorColumn = e.rowColFromTextPos(pos + len(runes))
 
 	content := provider.String()
 	e.propertyLock.Unlock()
 	e.updateText(content)
+}
+
+func (e *Entry) updateLineCounts() {
+	if e.ShowLineNumber {
+		lineCount := e.textProvider().rows()
+		if e.RowCount != lineCount {
+			//in case we have fewer lines
+			if lineCount < e.RowCount {
+				index := findIndexOfNumber(lineCount, 2)
+				e.propertyLock.Lock()
+				e.lineTableProvider().deleteFromTo(index, e.lineTableProvider().rowBoundary(len(e.lineTable.rowBounds)-1).end)
+				e.propertyLock.Unlock()
+			} else {
+				e.propertyLock.Lock()
+				e.lineTableProvider().insertAt(e.lineTableProvider().rowBoundary(len(e.lineTable.rowBounds)-1).end, e.generateLinesFromTo(e.RowCount+1, lineCount))
+				e.propertyLock.Unlock()
+			}
+			e.RowCount = lineCount
+		}
+
+	}
 }
 
 // TypedShortcut implements the Shortcutable interface
@@ -820,6 +854,7 @@ func (e *Entry) eraseSelection() {
 
 	e.propertyLock.Lock()
 	provider.deleteFromTo(posA, posB)
+	e.updateLineCounts()
 	e.CursorRow, e.CursorColumn = e.rowColFromTextPos(posA)
 	e.selectRow, e.selectColumn = e.CursorRow, e.CursorColumn
 	e.selecting = false
@@ -861,6 +896,7 @@ func (e *Entry) pasteFromClipboard(clipboard fyne.Clipboard) {
 	runes := []rune(text)
 	pos := e.cursorTextPos()
 	provider.insertAt(pos, text)
+	e.updateLineCounts()
 	e.CursorRow, e.CursorColumn = e.rowColFromTextPos(pos + len(runes))
 
 	e.updateText(provider.String())
@@ -1053,6 +1089,13 @@ func (e *Entry) textPosFromRowCol(row, col int) int {
 	return b.begin + col
 }
 
+// Obtains line count position from a given row
+// expects a read or write lock to be held by the caller
+func (e *Entry) linePosFromRow(row int) int {
+	b := e.lineTableProvider().rowBoundary(row)
+	return b.begin
+}
+
 func (e *Entry) GetMinCharSize() fyne.Size {
 	return e.text.charMinSize(e.Password, e.TextStyle)
 }
@@ -1107,6 +1150,21 @@ func (e *Entry) textProvider() *RichText {
 	text.ExtendBaseWidget(text)
 	text.inset = fyne.NewSize(0, theme.InputBorderSize())
 	e.text = text
+	return e.text
+}
+
+// lineTableProvider returns the lineTable handler for this entry
+func (e *Entry) lineTableProvider() *RichText {
+	if e.lineTable != nil {
+		return e.lineTable
+	}
+
+	lines := strings.Count(e.Text, "\n")
+	lineStr := e.generateLinesFromTo(1, lines)
+	text := NewRichTextWithText(lineStr)
+	text.ExtendBaseWidget(text)
+	text.inset = fyne.NewSize(0, theme.InputBorderSize())
+	e.lineTable = text
 	return e.text
 }
 
@@ -1247,6 +1305,7 @@ func (e *Entry) typedKeyReturn(provider *RichText, multiLine bool) {
 	}
 	e.propertyLock.Lock()
 	provider.insertAt(e.cursorTextPos(), "\n")
+	e.updateLineCounts()
 	e.CursorColumn = 0
 	e.CursorRow++
 	e.propertyLock.Unlock()
@@ -1255,8 +1314,8 @@ func (e *Entry) typedKeyReturn(provider *RichText, multiLine bool) {
 var _ fyne.WidgetRenderer = (*entryRenderer)(nil)
 
 type entryRenderer struct {
-	box, border *canvas.Rectangle
-	scroll      *widget.Scroll
+	box, border, lineBox *canvas.Rectangle
+	scroll               *widget.Scroll
 
 	objects []fyne.CanvasObject
 	entry   *Entry
@@ -1290,7 +1349,8 @@ func (r *entryRenderer) Layout(size fyne.Size) {
 	r.border.Move(fyne.NewPos(theme.InputBorderSize()/2, theme.InputBorderSize()/2))
 	r.box.Resize(size.Subtract(fyne.NewSize(theme.InputBorderSize()*2, theme.InputBorderSize()*2)))
 	r.box.Move(fyne.NewPos(theme.InputBorderSize(), theme.InputBorderSize()))
-
+	r.lineBox.Move(fyne.NewPos(theme.InputBorderSize(), theme.InputBorderSize()))
+	r.lineBox.Resize(size.Subtract(fyne.NewSize(theme.InputBorderSize()*2, theme.InputBorderSize()*2)))
 	actionIconSize := fyne.NewSize(0, 0)
 	if r.entry.ActionItem != nil {
 		actionIconSize = fyne.NewSize(theme.IconInlineSize(), theme.IconInlineSize())
@@ -1315,6 +1375,7 @@ func (r *entryRenderer) Layout(size fyne.Size) {
 
 	r.entry.textProvider().inset = fyne.NewSize(0, theme.InputBorderSize())
 	r.entry.placeholderProvider().inset = fyne.NewSize(0, theme.InputBorderSize())
+	r.entry.lineTableProvider().inset = fyne.NewSize(0, theme.InputBorderSize())
 	entrySize := size.Subtract(fyne.NewSize(r.trailingInset(), theme.InputBorderSize()*2))
 	entryPos := fyne.NewPos(0, theme.InputBorderSize())
 
@@ -1359,6 +1420,9 @@ func (r *entryRenderer) MinSize() fyne.Size {
 		count := r.entry.multiLineRows
 		if count <= 0 {
 			count = multiLineRows
+		}
+		if r.entry.ShowLineNumber {
+			minSize.AddWidthHeight(fyne.MeasureText(strconv.Itoa(count), theme.TextSize(), r.entry.TextStyle).Width, 0)
 		}
 		// ensure multiline height is at least charMinSize * multilineRows
 		rowHeight := charMin.Height * float32(count)
@@ -1466,6 +1530,44 @@ type entryContent struct {
 
 	entry  *Entry
 	scroll *widget.Scroll
+}
+
+// Returns the number of columns needed for expressing the line numbers. Includes padding.
+// Padding is 2 characters
+func (e *Entry) lineNumberCols() int {
+	return len(strconv.Itoa(e.RowCount)) + 2
+}
+
+func (e *Entry) generateLinesFromTo(first, last int) string {
+	builder := strings.Builder{}
+	for i := first; i <= last; i++ {
+		str := strconv.Itoa(i)
+		builder.WriteString(str)
+		builder.WriteString("  ")
+		builder.WriteString("\n")
+	}
+	return builder.String()
+}
+
+func findIndexOfNumber(target int, padding int) int {
+	if target <= 0 {
+		panic("Numerical exception")
+	}
+
+	index := 0
+	targetDigits := int(math.Log10(float64(target-1))) + 1
+	previousTierNumbers := 0
+	for i := 1; i < targetDigits; i++ {
+		numbersInTier := int(math.Pow(10, float64(i))) - 1
+		totalNumbers := numbersInTier - previousTierNumbers
+		index += totalNumbers*i + (totalNumbers * padding)
+		previousTierNumbers = numbersInTier
+	}
+	numbersInTier := (target - 1) - previousTierNumbers
+
+	index += (numbersInTier)*targetDigits + numbersInTier*padding
+
+	return index
 }
 
 func (e *entryContent) CreateRenderer() fyne.WidgetRenderer {
