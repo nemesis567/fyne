@@ -1547,6 +1547,27 @@ func (e *Entry) generateLinesFromTo(first, last int) string {
 	return builder.String()
 }
 
+// Hacky version with averaging
+func darkenColor(bc color.Color, percentage float64) color.RGBA {
+	cR, cG, cB, cA := bc.RGBA()
+	r := float64(cR)
+	g := float64(cG)
+	b := float64(cB)
+
+	average := (r + g + b) / 3
+
+	r = r*(1-percentage) + average*percentage
+	g = g*(1-percentage) + average*percentage
+	b = b*(1-percentage) + average*percentage
+
+	return color.RGBA{
+		R: uint8(r),
+		G: uint8(g),
+		B: uint8(b),
+		A: uint8(cA),
+	}
+}
+
 func (e *entryContent) CreateRenderer() fyne.WidgetRenderer {
 	e.ExtendBaseWidget(e)
 
@@ -1558,8 +1579,10 @@ func (e *entryContent) CreateRenderer() fyne.WidgetRenderer {
 		placeholder.Hide()
 	}
 	objects := []fyne.CanvasObject{placeholder, provider, e.entry.cursorAnim.cursor}
-	lineBox := canvas.NewRectangle(theme.DisabledColor())
-	cr, cg, cb, _ := theme.DisabledColor().RGBA()
+	tableLineColor := darkenColor(theme.InputBackgroundColor(), .03)
+	lineBox := canvas.NewRectangle(tableLineColor)
+
+	cr, cg, cb, _ := tableLineColor.RGBA()
 	lineSelectBox := canvas.NewRectangle(color.RGBA{
 		R: uint8(cr),
 		G: uint8(cg),
