@@ -47,7 +47,7 @@ type Entry struct {
 	OnSubmitted    func(string) `json:"-"`
 	Password       bool
 	MultiLine      bool
-	ShowLineNumber bool
+	showLineNumber bool
 	Wrapping       fyne.TextWrap
 
 	// Set a validator that this entry will check against
@@ -119,6 +119,13 @@ func NewMultiLineEntry() *Entry {
 	return e
 }
 
+// NewMultiLineNumberedEntry creates a new entry that allows multiple lines and displays line count
+func NewMultiLineNumberedEntry() *Entry {
+	e := &Entry{MultiLine: true, Wrapping: fyne.TextTruncate, showLineNumber: true}
+	e.ExtendBaseWidget(e)
+	return e
+}
+
 // NewPasswordEntry creates a new entry password widget
 func NewPasswordEntry() *Entry {
 	e := &Entry{Password: true, Wrapping: fyne.TextTruncate}
@@ -164,13 +171,12 @@ func (e *Entry) CreateRenderer() fyne.WidgetRenderer {
 	// initialise
 	e.textProvider()
 	e.placeholderProvider()
-	if e.ShowLineNumber {
+	if e.showLineNumber {
 		e.lineTableProvider()
 	}
 
 	box := canvas.NewRectangle(theme.InputBackgroundColor())
 	border := canvas.NewRectangle(color.Transparent)
-	lineBox := canvas.NewRectangle(theme.DisabledColor())
 	border.StrokeWidth = theme.InputBorderSize()
 	border.StrokeColor = theme.InputBorderColor()
 	cursor := canvas.NewRectangle(color.Transparent)
@@ -180,9 +186,6 @@ func (e *Entry) CreateRenderer() fyne.WidgetRenderer {
 	e.content = &entryContent{entry: e}
 	e.scroll = widget.NewScroll(nil)
 	objects := []fyne.CanvasObject{box, border}
-	if e.ShowLineNumber {
-		objects = append([]fyne.CanvasObject{lineBox, e.lineTableProvider()}, objects...)
-	}
 	if e.Wrapping != fyne.TextWrapOff {
 		e.scroll.Content = e.content
 		objects = append(objects, e.scroll)
@@ -202,7 +205,7 @@ func (e *Entry) CreateRenderer() fyne.WidgetRenderer {
 		objects = append(objects, e.ActionItem)
 	}
 
-	return &entryRenderer{box, border, lineBox, e.scroll, objects, e}
+	return &entryRenderer{box, border, e.scroll, objects, e}
 }
 
 // Cursor returns the cursor type of this widget
@@ -602,6 +605,7 @@ func (e *Entry) TypedKey(key *fyne.KeyEvent) {
 		pos := e.cursorTextPos()
 		provider.deleteFromTo(pos-1, pos)
 		e.CursorRow, e.CursorColumn = e.rowColFromTextPos(pos - 1)
+		e.updateLineCounts()
 		e.propertyLock.Unlock()
 	case fyne.KeyDelete:
 		pos := e.cursorTextPos()
@@ -765,19 +769,15 @@ func (e *Entry) TypedRune(r rune) {
 }
 
 func (e *Entry) updateLineCounts() {
-	if e.ShowLineNumber {
+	if e.showLineNumber {
 		lineCount := e.textProvider().rows()
 		if e.RowCount != lineCount {
 			//in case we have fewer lines
 			if lineCount < e.RowCount {
-				index := findIndexOfNumber(lineCount, 2)
-				e.propertyLock.Lock()
-				e.lineTableProvider().deleteFromTo(index, e.lineTableProvider().rowBoundary(len(e.lineTable.rowBounds)-1).end)
-				e.propertyLock.Unlock()
+				//index := findIndexOfNumber(lineCount, 2)
+				e.lineTableProvider().deleteFromTo(e.lineTableProvider().rowBoundary(lineCount).begin, e.lineTableProvider().rowBoundary(len(e.lineTable.rowBounds)-1).end)
 			} else {
-				e.propertyLock.Lock()
 				e.lineTableProvider().insertAt(e.lineTableProvider().rowBoundary(len(e.lineTable.rowBounds)-1).end, e.generateLinesFromTo(e.RowCount+1, lineCount))
-				e.propertyLock.Unlock()
 			}
 			e.RowCount = lineCount
 		}
@@ -817,7 +817,7 @@ func (e *Entry) cursorColAt(text []rune, pos fyne.Position) int {
 		str := string(text[0:i])
 		wid := fyne.MeasureText(str, theme.TextSize(), e.TextStyle).Width
 		charWid := fyne.MeasureText(string(text[i]), theme.TextSize(), e.TextStyle).Width
-		if pos.X < theme.InnerPadding()+wid+(charWid/2) {
+		if pos.X < e.getLineColWidth(2)+theme.InnerPadding()+wid+(charWid/2) {
 			return i
 		}
 	}
@@ -1089,17 +1089,6 @@ func (e *Entry) textPosFromRowCol(row, col int) int {
 	return b.begin + col
 }
 
-// Obtains line count position from a given row
-// expects a read or write lock to be held by the caller
-func (e *Entry) linePosFromRow(row int) int {
-	b := e.lineTableProvider().rowBoundary(row)
-	return b.begin
-}
-
-func (e *Entry) GetMinCharSize() fyne.Size {
-	return e.text.charMinSize(e.Password, e.TextStyle)
-}
-
 func (e *Entry) syncSegments() {
 	colName := theme.ColorNameForeground
 	wrap := e.textWrap()
@@ -1159,7 +1148,11 @@ func (e *Entry) lineTableProvider() *RichText {
 		return e.lineTable
 	}
 
-	lines := strings.Count(e.Text, "\n")
+	lines := 1
+	if e.Text != "" {
+		lines += strings.Count(e.Text, "\n")
+	}
+	e.RowCount = lines
 	lineStr := e.generateLinesFromTo(1, lines)
 	text := NewRichTextWithText(lineStr)
 	text.ExtendBaseWidget(text)
@@ -1314,8 +1307,8 @@ func (e *Entry) typedKeyReturn(provider *RichText, multiLine bool) {
 var _ fyne.WidgetRenderer = (*entryRenderer)(nil)
 
 type entryRenderer struct {
-	box, border, lineBox *canvas.Rectangle
-	scroll               *widget.Scroll
+	box, border *canvas.Rectangle
+	scroll      *widget.Scroll
 
 	objects []fyne.CanvasObject
 	entry   *Entry
@@ -1349,8 +1342,7 @@ func (r *entryRenderer) Layout(size fyne.Size) {
 	r.border.Move(fyne.NewPos(theme.InputBorderSize()/2, theme.InputBorderSize()/2))
 	r.box.Resize(size.Subtract(fyne.NewSize(theme.InputBorderSize()*2, theme.InputBorderSize()*2)))
 	r.box.Move(fyne.NewPos(theme.InputBorderSize(), theme.InputBorderSize()))
-	r.lineBox.Move(fyne.NewPos(theme.InputBorderSize(), theme.InputBorderSize()))
-	r.lineBox.Resize(size.Subtract(fyne.NewSize(theme.InputBorderSize()*2, theme.InputBorderSize()*2)))
+
 	actionIconSize := fyne.NewSize(0, 0)
 	if r.entry.ActionItem != nil {
 		actionIconSize = fyne.NewSize(theme.IconInlineSize(), theme.IconInlineSize())
@@ -1421,7 +1413,7 @@ func (r *entryRenderer) MinSize() fyne.Size {
 		if count <= 0 {
 			count = multiLineRows
 		}
-		if r.entry.ShowLineNumber {
+		if r.entry.showLineNumber {
 			minSize.AddWidthHeight(fyne.MeasureText(strconv.Itoa(count), theme.TextSize(), r.entry.TextStyle).Width, 0)
 		}
 		// ensure multiline height is at least charMinSize * multilineRows
@@ -1538,6 +1530,12 @@ func (e *Entry) lineNumberCols() int {
 	return len(strconv.Itoa(e.RowCount)) + 2
 }
 
+// Returns the number of columns needed for expressing the line numbers. Includes padding.
+// Padding is 2 characters
+func (e *Entry) lineColSize(padding int) fyne.Size {
+	return fyne.MeasureText(strconv.Itoa(e.RowCount)+"  ", theme.TextSize(), e.TextStyle)
+}
+
 func (e *Entry) generateLinesFromTo(first, last int) string {
 	builder := strings.Builder{}
 	for i := first; i <= last; i++ {
@@ -1547,27 +1545,6 @@ func (e *Entry) generateLinesFromTo(first, last int) string {
 		builder.WriteString("\n")
 	}
 	return builder.String()
-}
-
-func findIndexOfNumber(target int, padding int) int {
-	if target <= 0 {
-		panic("Numerical exception")
-	}
-
-	index := 0
-	targetDigits := int(math.Log10(float64(target-1))) + 1
-	previousTierNumbers := 0
-	for i := 1; i < targetDigits; i++ {
-		numbersInTier := int(math.Pow(10, float64(i))) - 1
-		totalNumbers := numbersInTier - previousTierNumbers
-		index += totalNumbers*i + (totalNumbers * padding)
-		previousTierNumbers = numbersInTier
-	}
-	numbersInTier := (target - 1) - previousTierNumbers
-
-	index += (numbersInTier)*targetDigits + numbersInTier*padding
-
-	return index
 }
 
 func (e *entryContent) CreateRenderer() fyne.WidgetRenderer {
@@ -1581,9 +1558,20 @@ func (e *entryContent) CreateRenderer() fyne.WidgetRenderer {
 		placeholder.Hide()
 	}
 	objects := []fyne.CanvasObject{placeholder, provider, e.entry.cursorAnim.cursor}
+	lineBox := canvas.NewRectangle(theme.DisabledColor())
+	cr, cg, cb, _ := theme.DisabledColor().RGBA()
+	lineSelectBox := canvas.NewRectangle(color.RGBA{
+		R: uint8(cr),
+		G: uint8(cg),
+		B: uint8(cb),
+		A: 10,
+	})
+	if e.entry.showLineNumber {
+		objects = append([]fyne.CanvasObject{lineBox, e.entry.lineTableProvider(), lineSelectBox}, objects...)
+	}
 
 	r := &entryContentRenderer{e.entry.cursorAnim.cursor, []fyne.CanvasObject{}, objects,
-		provider, placeholder, e}
+		lineBox, lineSelectBox, provider, placeholder, e.entry.lineTableProvider(), e}
 	r.updateScrollDirections()
 	r.Layout(e.size)
 	return r
@@ -1610,21 +1598,36 @@ func (e *entryContent) Dragged(d *fyne.DragEvent) {
 var _ fyne.WidgetRenderer = (*entryContentRenderer)(nil)
 
 type entryContentRenderer struct {
-	cursor    *canvas.Rectangle
-	selection []fyne.CanvasObject
-	objects   []fyne.CanvasObject
-
-	provider, placeholder *RichText
-	content               *entryContent
+	cursor                           *canvas.Rectangle
+	selection                        []fyne.CanvasObject
+	objects                          []fyne.CanvasObject
+	lineBox                          *canvas.Rectangle
+	lineSelectBox                    *canvas.Rectangle
+	provider, placeholder, lineTable *RichText
+	content                          *entryContent
 }
 
 func (r *entryContentRenderer) Destroy() {
 	r.content.entry.cursorAnim.stop()
 }
-
+func (r *Entry) getLineColWidth(padding int) float32 {
+	lineColWidth := float32(0)
+	if r.content.entry.showLineNumber {
+		lineColWidth += 10 + r.lineColSize(padding).Width
+	}
+	return lineColWidth
+}
 func (r *entryContentRenderer) Layout(size fyne.Size) {
-	r.provider.Resize(size)
-	r.placeholder.Resize(size)
+
+	lineColWidth := r.content.entry.getLineColWidth(2)
+	r.provider.Resize(size.Subtract(fyne.NewSize(lineColWidth, 0)))
+	r.placeholder.Resize(fyne.NewSize(lineColWidth, 0))
+	r.provider.Move(fyne.NewPos(lineColWidth, 0))
+	r.placeholder.Move(fyne.NewPos(lineColWidth, 0))
+	r.lineBox.Move(fyne.NewPos(theme.InputBorderSize(), theme.InputBorderSize()))
+	r.lineBox.Resize(fyne.NewSize(lineColWidth, size.Height-theme.InputBorderSize()*2))
+	r.lineSelectBox.Move(fyne.NewPos(0, r.cursor.Position().Y))
+	r.lineSelectBox.Resize(fyne.NewSize(lineColWidth, r.cursor.Size().Height))
 }
 
 func (r *entryContentRenderer) MinSize() fyne.Size {
@@ -1708,7 +1711,7 @@ func (r *entryContentRenderer) buildSelection() {
 	// Convert column, row into x,y
 	getCoordinates := func(column int, row int) (float32, float32) {
 		sz := provider.lineSizeToColumn(column, row)
-		return sz.Width, sz.Height*float32(row) - theme.InputBorderSize() + theme.InnerPadding()
+		return sz.Width + r.content.entry.getLineColWidth(2), sz.Height*float32(row) - theme.InputBorderSize() + theme.InnerPadding()
 	}
 
 	lineHeight := r.content.entry.text.charMinSize(r.content.entry.Password, r.content.entry.TextStyle).Height
@@ -1816,8 +1819,8 @@ func (r *entryContentRenderer) moveCursor() {
 	r.content.entry.propertyLock.Lock()
 	lineHeight := r.content.entry.text.charMinSize(r.content.entry.Password, r.content.entry.TextStyle).Height
 	r.cursor.Resize(fyne.NewSize(theme.InputBorderSize(), lineHeight))
-	r.cursor.Move(fyne.NewPos(xPos-(theme.InputBorderSize()/2), yPos+theme.InnerPadding()-theme.InputBorderSize()))
-
+	r.cursor.Move(fyne.NewPos(r.content.entry.getLineColWidth(2)+xPos-(theme.InputBorderSize()/2), yPos+theme.InnerPadding()-theme.InputBorderSize()))
+	r.lineSelectBox.Move(fyne.NewPos(0, r.cursor.Position().Y))
 	callback := r.content.entry.OnCursorChanged
 	r.content.entry.propertyLock.Unlock()
 	r.ensureCursorVisible()

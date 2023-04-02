@@ -126,12 +126,15 @@ func makeEntryTab(_ fyne.Window) fyne.CanvasObject {
 	entryMultiLine := widget.NewMultiLineEntry()
 	entryMultiLine.SetPlaceHolder("MultiLine Entry")
 	entryMultiLine.SetMinRowsVisible(4)
-
+	entryMultiLineNumbered := widget.NewMultiLineNumberedEntry()
+	entryMultiLineNumbered.SetPlaceHolder("MultiLine Entry")
+	entryMultiLineNumbered.SetMinRowsVisible(4)
 	return container.NewVBox(
 		entry,
 		entryDisabled,
 		entryValidated,
-		entryMultiLine)
+		entryMultiLine,
+		entryMultiLineNumbered)
 }
 
 func makeTextGrid() *widget.TextGrid {
