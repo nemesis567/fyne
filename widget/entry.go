@@ -1244,7 +1244,7 @@ func (e *Entry) updateText(text string) {
 		e.Text = text
 		e.syncSegments()
 		e.text.updateRowBounds()
-
+		e.updateLineCounts()
 		if e.Text != "" {
 			e.dirty = true
 		}
